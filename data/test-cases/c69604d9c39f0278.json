@@ -1,21 +1,36 @@
 {
-  "uid" : "59b0817dfe2f7f04",
+  "uid" : "c69604d9c39f0278",
   "name" : "Create topic",
   "fullName" : "tests.topics_test.TestTopics#test_admin_create_topic",
   "historyId" : "3d03ba7934c016b5e5bcabaab4a7f526",
   "time" : {
-    "start" : 1703679297872,
-    "stop" : 1703679304976,
-    "duration" : 7104
+    "start" : 1703679633344,
+    "stop" : 1703679641026,
+    "duration" : 7682
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1703679632456,
+      "stop" : 1703679633344,
+      "duration" : 888
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
     "name" : "setup",
     "time" : {
-      "start" : 1703679297872,
-      "stop" : 1703679297872,
+      "start" : 1703679633344,
+      "stop" : 1703679633344,
       "duration" : 0
     },
     "status" : "passed",
@@ -24,32 +39,17 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1703679296999,
-      "stop" : 1703679297871,
-      "duration" : 872
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Open https://space.a-mates.com/login page",
       "time" : {
-        "start" : 1703679297872,
-        "stop" : 1703679299536,
-        "duration" : 1664
+        "start" : 1703679633344,
+        "stop" : 1703679635655,
+        "duration" : 2311
       },
       "status" : "passed",
       "steps" : [ ],
@@ -57,14 +57,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1703679299536,
-        "stop" : 1703679299656,
-        "duration" : 120
+        "start" : 1703679635655,
+        "stop" : 1703679635772,
+        "duration" : 117
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,13 +75,13 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1703679299656,
-        "stop" : 1703679299734,
+        "start" : 1703679635772,
+        "stop" : 1703679635850,
         "duration" : 78
       },
       "status" : "passed",
@@ -93,14 +93,14 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1703679299734,
-        "stop" : 1703679299796,
-        "duration" : 62
+        "start" : 1703679635851,
+        "stop" : 1703679635906,
+        "duration" : 55
       },
       "status" : "passed",
       "steps" : [ ],
@@ -108,14 +108,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Page https://space.a-mates.com/projects is opened",
       "time" : {
-        "start" : 1703679299796,
-        "stop" : 1703679300830,
-        "duration" : 1034
+        "start" : 1703679635906,
+        "stop" : 1703679637920,
+        "duration" : 2014
       },
       "status" : "passed",
       "steps" : [ ],
@@ -123,14 +123,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Open My project",
       "time" : {
-        "start" : 1703679300830,
-        "stop" : 1703679301295,
-        "duration" : 465
+        "start" : 1703679637920,
+        "stop" : 1703679638345,
+        "duration" : 425
       },
       "status" : "passed",
       "steps" : [ ],
@@ -138,22 +138,22 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Create new topic without cover",
       "time" : {
-        "start" : 1703679301295,
-        "stop" : 1703679304749,
-        "duration" : 3454
+        "start" : 1703679638345,
+        "stop" : 1703679640862,
+        "duration" : 2517
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Create 'demo 1703679303.5218' topic",
+        "name" : "Create 'demo 1703679640.439779' topic",
         "time" : {
-          "start" : 1703679303522,
-          "stop" : 1703679304749,
-          "duration" : 1227
+          "start" : 1703679640440,
+          "stop" : 1703679640862,
+          "duration" : 422
         },
         "status" : "passed",
         "steps" : [ ],
@@ -161,35 +161,35 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
-        "hasContent" : false
+        "hasContent" : false,
+        "stepsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 1,
-      "hasContent" : true
+      "hasContent" : true,
+      "stepsCount" : 1
     } ],
     "attachments" : [ {
-      "uid" : "8049730aeb6b783e",
+      "uid" : "4dcf763b119a7937",
       "name" : "Succsess",
-      "source" : "8049730aeb6b783e.png",
+      "source" : "4dcf763b119a7937.png",
       "type" : "image/png",
-      "size" : 385544
+      "size" : 107259
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 8,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 8
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1703679304976,
-      "stop" : 1703679305062,
-      "duration" : 86
+      "start" : 1703679641027,
+      "stop" : 1703679641112,
+      "duration" : 85
     },
     "status" : "passed",
     "steps" : [ ],
@@ -197,15 +197,15 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Topics"
-  }, {
     "name" : "severity",
     "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Topics"
   }, {
     "name" : "tag",
     "value" : "smoke"
@@ -220,7 +220,7 @@
     "value" : "TestTopics"
   }, {
     "name" : "host",
-    "value" : "c1949ad7b936"
+    "value" : "1c00fe23d492"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -245,8 +245,27 @@
     "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "59b0817dfe2f7f04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703679297872,
+          "stop" : 1703679304976,
+          "duration" : 7104
+        }
+      } ]
+    },
     "tags" : [ "smoke" ]
   },
-  "source" : "59b0817dfe2f7f04.json",
+  "source" : "c69604d9c39f0278.json",
   "parameterValues" : [ ]
 }

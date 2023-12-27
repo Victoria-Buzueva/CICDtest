@@ -4,13 +4,13 @@
     "name" : "tests.topics_test",
     "children" : [ {
       "name" : "Create topic",
-      "uid" : "59b0817dfe2f7f04",
+      "uid" : "c69604d9c39f0278",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1703679297872,
-        "stop" : 1703679304976,
-        "duration" : 7104
+        "start" : 1703679633344,
+        "stop" : 1703679641026,
+        "duration" : 7682
       },
       "flaky" : false,
       "newFailed" : false,
