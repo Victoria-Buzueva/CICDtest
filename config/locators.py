@@ -22,8 +22,14 @@ class TopicsLocators:
     CREATE_TOPIC_COVER_PICTURE = ("xpath", "//label[@for='topic-imageundefined']//img[@src and @width and @height]")
     CREATE_TOPIC_OK_BUTTON = ("xpath", "//button/span[text()='Create']")
     CREATE_TOPIC_CANCEL_BUTTON = ("xpath", "//button/span[text()='Cancel']")
-    # Topic window locators
+    # Topic navbar locators
     TOPIC_NAME_IN_NAVBAR = ("xpath", "//nav//h5")
+    TOPIC_SETTINGS_BUTTON = ("xpath", "//div[@style='overflow: hidden;']")
+    # Topic profile locators
+    TOPIC_DELETE_BUTTON = ("xpath", "//button/span[text()='Delete topic']")
+    # Topic delete alert locators
+    TOPIC_DELETE_ALERT_YES_BUTTON = ("xpath", "//button/span[text()='Yes']")
+    TOPIC_DELETE_ALERT_CANCEL_BUTTON = ("xpath", "//button/span[text()='Cancel']")
     # Comment locators
     COMMENT_INPUT_FIELD = ("xpath", "//textarea[@id='messageInput']")
     COMMENT_SEND_BUTTON = ("xpath", "//button[.//*[@width='40' and @height='40']]")

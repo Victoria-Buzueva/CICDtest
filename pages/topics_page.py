@@ -19,6 +19,7 @@ class TopicsPage(BasePage):
 
     @allure.step("Enter new topic name")
     def enter_topic_name_in_create_topic_window(self, topic_name):
+        self.topic_name = topic_name
         enter_topic_name = self.wait.until(EC.element_to_be_clickable(TopicsLocators.CREATE_TOPIC_NAME))
         enter_topic_name.send_keys(topic_name)
         self.wait.until(EC.text_to_be_present_in_element_value(TopicsLocators.CREATE_TOPIC_NAME, topic_name))
@@ -47,12 +48,13 @@ class TopicsPage(BasePage):
         self.wait.until(EC.visibility_of_element_located(TOPIC_COVER_LOCATOR))
 
     @allure.step("Check if the created topic is opened")
-    def topic_is_opened(self, topic_name):
+    def topic_is_opened(self):
         new_topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_NAME_IN_NAVBAR))
-        assert new_topic_name.text == topic_name, "Created topic is not opened"
+        assert new_topic_name.text == self.topic_name, "Created topic is not opened"
 
     @allure.step('Enter text comment')
     def enter_text_comment(self, new_comment):
+        self.new_comment = new_comment
         enter_comment_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_INPUT_FIELD))
         enter_comment_field.send_keys(new_comment)
         self.wait.until(EC.text_to_be_present_in_element_value(TopicsLocators.COMMENT_INPUT_FIELD, new_comment))
@@ -66,7 +68,32 @@ class TopicsPage(BasePage):
         send_comment_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_SEND_BUTTON))
         send_comment_button.click()
 
+    @allure.step('Click topic settings button')
+    def click_topic_settings_button(self):
+        settings_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SETTINGS_BUTTON))
+        settings_button.click()
 
+    @allure.step('Click topic delete button')
+    def click_topic_delete_button(self):
+        delete_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_DELETE_BUTTON))
+        delete_button.click()
+
+    @allure.step('Click topic yes button in topic delete alert')
+    def click_delete_alert_yes_button(self):
+        yes_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_DELETE_ALERT_YES_BUTTON))
+        yes_button.click()
+
+    @allure.step('Check if the deleted topic disappear from the topic list')
+    def topic_is_disappear_from_topic_list(self):
+        DELETE_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{self.topic_name}']")
+        self.wait.until(EC.invisibility_of_element_located(DELETE_TOPIC_LOCATOR))
+
+    @allure.step('Delete created topic in the end of test')
+    def delete_created_topic(self):
+        self.click_topic_settings_button()
+        self.click_topic_delete_button()
+        self.click_delete_alert_yes_button()
+        self.topic_is_disappear_from_topic_list()
 
     @allure.step("Click e-mail button in Top menu")
     def click_email_button_in_top_menu(self):
