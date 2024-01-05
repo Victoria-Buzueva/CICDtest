@@ -5,14 +5,40 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Create topic with cover",
-        "uid" : "30f5516ea52c37a6",
+        "name" : "Create topic without cover",
+        "uid" : "d0bbb017a0344756",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704499053483,
-          "stop" : 1704499065932,
-          "duration" : 12449
+          "start" : 1704499051463,
+          "stop" : 1704499061810,
+          "duration" : 10347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create topic with cover",
+        "uid" : "d45025e026760074",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704499068404,
+          "stop" : 1704499081039,
+          "duration" : 12635
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete topic",
+        "uid" : "8d275efd379f7337",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704499097778,
+          "stop" : 1704499108134,
+          "duration" : 10356
         },
         "flaky" : false,
         "newFailed" : false,

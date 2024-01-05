@@ -5,9 +5,9 @@
     "name" : "Topics",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 3,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 4
     }
