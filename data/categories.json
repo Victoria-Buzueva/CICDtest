@@ -6,12 +6,12 @@
       "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
       "children" : [ {
         "name" : "Create topic without cover",
-        "uid" : "f7a980c029bbe1f6",
+        "uid" : "1cbf173b88109da4",
         "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
         "status" : "broken",
         "time" : {
-          "start" : 1704498531302,
-          "stop" : 1704498531302,
+          "start" : 1704498549728,
+          "stop" : 1704498549728,
           "duration" : 0
         },
         "flaky" : false,
@@ -19,12 +19,12 @@
         "parameters" : [ ]
       }, {
         "name" : "Create topic with cover",
-        "uid" : "b7c5847eadf0e610",
+        "uid" : "e2c35bfbf91ce256",
         "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
         "status" : "broken",
         "time" : {
-          "start" : 1704498532226,
-          "stop" : 1704498532226,
+          "start" : 1704498550656,
+          "stop" : 1704498550656,
           "duration" : 0
         },
         "flaky" : false,
@@ -32,12 +32,12 @@
         "parameters" : [ ]
       }, {
         "name" : "Add text comment",
-        "uid" : "3ae5cc48cc163502",
+        "uid" : "56d5b73e995d6154",
         "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
         "status" : "broken",
         "time" : {
-          "start" : 1704498533036,
-          "stop" : 1704498533036,
+          "start" : 1704498551466,
+          "stop" : 1704498551466,
           "duration" : 0
         },
         "flaky" : false,
@@ -45,12 +45,12 @@
         "parameters" : [ ]
       }, {
         "name" : "Delete topic",
-        "uid" : "2955709244e9f8e4",
+        "uid" : "d25680321465334e",
         "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
         "status" : "broken",
         "time" : {
-          "start" : 1704498533844,
-          "stop" : 1704498533844,
+          "start" : 1704498552274,
+          "stop" : 1704498552274,
           "duration" : 0
         },
         "flaky" : false,
