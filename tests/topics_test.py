@@ -8,14 +8,7 @@ class TestTopics(BaseTest):
     @allure.title("Create topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout")
     def test_admin_create_topic(self):
-        self.login_page.open()
-        self.login_page.enter_login(self.data.LOGIN)
-        self.login_page.enter_password(self.data.PASSWORD)
-        self.login_page.click_submit_button()
-        self.my_project_page.is_opened()
-        self.my_project_page.open_my_projects_page()
-        self.my_project_page.open_my_project()
-        # self.topics_page.is_opened()
         self.topics_page.create_new_topic_without_cover()
         self.topics_page.make_screenshot("Succsess")

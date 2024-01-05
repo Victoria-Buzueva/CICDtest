@@ -8,9 +8,11 @@ class LoginPageLocators:
 class MenuLocators:
     # Top menu locators
     MY_PROJECTS_BUTTON = ("xpath", "//a[@href='/projects']")
+    EMAIL_BUTTON = ("xpath", "//div[@aria-controls='myprofile-menu']")
+    LOGOUT_BUTTON = ("xpath", "//li[text()='Log out']")
 
     # Open project button
-    NAME_OF_MY_PROJECT = ("xpath", "//p[@id='projectName']")
+    NAME_OF_MY_PROJECT_BUTTON = ("xpath", "//p[@id='projectName']")
 
 class TopicsLocators:
     # Create topic locators
