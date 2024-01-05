@@ -2,14 +2,16 @@ import allure
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
+from config.locators import MenuLocators
 
 
 class MyProjectsPage(BasePage):
     PAGE_URL = Links.MY_PROJECTS_PAGE
-    MY_PROJECTS_BUTTON = ("xpath", "/html/body/div[1]/div[1]/header/div/div[2]/a")
-    DEMO_PROJECT_BUTTON = ("xpath", "/html/body/div[1]/div[1]/div/div/div/div[1]/div")
 
-    @allure.step("Open My project")
-    def open_my_progect(self):
-        self.wait.until(EC.element_to_be_clickable(self.MY_PROJECTS_BUTTON)).click()
-        self.wait.until(EC.element_to_be_clickable(self.DEMO_PROJECT_BUTTON)).click()
+    @allure.step("Click on 'My projects' button in top menu")
+    def open_my_projects_page(self):
+        self.wait.until(EC.element_to_be_clickable(MenuLocators.MY_PROJECTS_BUTTON)).click()
+
+    @allure.step("Click on 'NAME_OF_MY_PROJECT' button")
+    def open_my_project(self):
+        self.wait.until(EC.element_to_be_clickable(MenuLocators.NAME_OF_MY_PROJECT_BUTTON)).click()
