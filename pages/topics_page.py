@@ -51,6 +51,23 @@ class TopicsPage(BasePage):
         new_topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_NAME_IN_NAVBAR))
         assert new_topic_name.text == topic_name, "Created topic is not opened"
 
+    @allure.step('Enter text comment')
+    def enter_text_comment(self, new_comment):
+        enter_comment_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_INPUT_FIELD))
+        enter_comment_field.send_keys(new_comment)
+        self.wait.until(EC.text_to_be_present_in_element_value(TopicsLocators.COMMENT_INPUT_FIELD, new_comment))
+
+    @allure.step('Check if last comment has sended text')
+    def last_comment_has_text(self, new_comment):
+        self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.LAST_COMMENT, new_comment))
+
+    @allure.step('Click send comment button')
+    def click_send_comment_button(self):
+        send_comment_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_SEND_BUTTON))
+        send_comment_button.click()
+
+
+
     @allure.step("Click e-mail button in Top menu")
     def click_email_button_in_top_menu(self):
         email_button = self.wait.until(EC.element_to_be_clickable(MenuLocators.EMAIL_BUTTON))

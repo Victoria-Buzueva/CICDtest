@@ -24,4 +24,7 @@ class TopicsLocators:
     CREATE_TOPIC_CANCEL_BUTTON = ("xpath", "//button/span[text()='Cancel']")
     # Topic window locators
     TOPIC_NAME_IN_NAVBAR = ("xpath", "//nav//h5")
-
+    # Comment locators
+    COMMENT_INPUT_FIELD = ("xpath", "//textarea[@id='messageInput']")
+    COMMENT_SEND_BUTTON = ("xpath", "//button[.//*[@width='40' and @height='40']]")
+    LAST_COMMENT = ("xpath", "(//div[@style='white-space: pre-wrap; word-break: break-word;'])[last()]")

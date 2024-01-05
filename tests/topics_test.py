@@ -6,7 +6,7 @@ from base.base_test import BaseTest
 
 @allure.feature("Topics")
 class TestTopics(BaseTest):
-    # @pytest.mark.skip
+    @pytest.mark.skip
     @allure.title("Create topic without cover")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -35,5 +35,18 @@ class TestTopics(BaseTest):
         self.topics_page.topic_has_cover(topic_name)
         self.topics_page.topic_is_opened(topic_name)
         self.topics_page.make_screenshot("Succsess")
+
+    # @pytest.mark.skip
+    @allure.title("Add text comment")
+    @allure.severity("Critical")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout")
+    def test_user_add_text_comment(self):
+        self.test_user_create_topic_without_cover()
+        new_comment = "comment " + str(time.time())
+        self.topics_page.enter_text_comment(new_comment)
+        self.topics_page.click_send_comment_button()
+        self.topics_page.last_comment_has_text(new_comment)
+        time.sleep(3)
 
 
