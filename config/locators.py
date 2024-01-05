@@ -19,6 +19,7 @@ class TopicsLocators:
     CREATE_NEW_TOPIC_BUTTON = ("xpath", "//button[contains(@class,'List_addButton__gr0ex')]")
     CREATE_TOPIC_NAME = ("xpath", "//textarea[@id='addTopicInput']")
     CREATE_TOPIC_COVER = ("xpath", "//input[@id='topic-imageundefined']")
+    CREATE_TOPIC_COVER_PICTURE = ("xpath", "//label[@for='topic-imageundefined']//img[@src and @width and @height]")
     CREATE_TOPIC_OK_BUTTON = ("xpath", "//button/span[text()='Create']")
     CREATE_TOPIC_CANCEL_BUTTON = ("xpath", "//button/span[text()='Cancel']")
     # Topic window locators
