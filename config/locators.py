@@ -20,4 +20,7 @@ class TopicsLocators:
     CREATE_TOPIC_NAME = ("xpath", "//textarea[@id='addTopicInput']")
     CREATE_TOPIC_COVER = ("xpath", "//input[@id='topic-imageundefined']")
     CREATE_TOPIC_OK_BUTTON = ("xpath", "//button/span[text()='Create']")
+    CREATE_TOPIC_CANCEL_BUTTON = ("xpath", "//button/span[text()='Cancel']")
+    # Topic window locators
+    TOPIC_NAME_IN_NAVBAR = ("xpath", "//nav//h5")
 
