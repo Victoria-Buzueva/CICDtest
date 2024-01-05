@@ -7,14 +7,53 @@
       "children" : [ {
         "name" : "TestTopics",
         "children" : [ {
-          "name" : "Create topic",
-          "uid" : "23708c2fb2d84038",
+          "name" : "Create topic without cover",
+          "uid" : "f7a980c029bbe1f6",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1703680028664,
-            "stop" : 1703680035012,
-            "duration" : 6348
+            "start" : 1704498531302,
+            "stop" : 1704498531302,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Create topic with cover",
+          "uid" : "b7c5847eadf0e610",
+          "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
+          "status" : "broken",
+          "time" : {
+            "start" : 1704498532226,
+            "stop" : 1704498532226,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Add text comment",
+          "uid" : "3ae5cc48cc163502",
+          "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
+          "status" : "broken",
+          "time" : {
+            "start" : 1704498533036,
+            "stop" : 1704498533036,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Delete topic",
+          "uid" : "2955709244e9f8e4",
+          "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
+          "status" : "broken",
+          "time" : {
+            "start" : 1704498533844,
+            "stop" : 1704498533844,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,

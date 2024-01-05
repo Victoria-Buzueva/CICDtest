@@ -1,5 +1,65 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "children" : [ {
+        "name" : "Create topic without cover",
+        "uid" : "f7a980c029bbe1f6",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704498531302,
+          "stop" : 1704498531302,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create topic with cover",
+        "uid" : "b7c5847eadf0e610",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704498532226,
+          "stop" : 1704498532226,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add text comment",
+        "uid" : "3ae5cc48cc163502",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704498533036,
+          "stop" : 1704498533036,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete topic",
+        "uid" : "2955709244e9f8e4",
+        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704498533844,
+          "stop" : 1704498533844,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6a28f92c5c8a4cadb904435561a27c65"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
