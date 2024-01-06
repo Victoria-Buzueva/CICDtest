@@ -8,52 +8,52 @@
         "name" : "TestTopics",
         "children" : [ {
           "name" : "Create topic without cover",
-          "uid" : "d0bbb017a0344756",
+          "uid" : "21174452c8703fc0",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1704499051463,
-            "stop" : 1704499061810,
-            "duration" : 10347
+            "start" : 1704499393808,
+            "stop" : 1704499398598,
+            "duration" : 4790
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Create topic with cover",
-          "uid" : "d45025e026760074",
+          "uid" : "a78299068f548f0d",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
           "status" : "broken",
           "time" : {
-            "start" : 1704499068404,
-            "stop" : 1704499081039,
-            "duration" : 12635
+            "start" : 1704499403857,
+            "stop" : 1704499417284,
+            "duration" : 13427
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Add text comment",
-          "uid" : "c7b0bee2ea650e61",
+          "uid" : "b1b7331fb9de6054",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1704499086483,
-            "stop" : 1704499091910,
-            "duration" : 5427
+            "start" : 1704499422553,
+            "stop" : 1704499432920,
+            "duration" : 10367
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Delete topic",
-          "uid" : "8d275efd379f7337",
+          "uid" : "c111909b0b94e588",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1704499097778,
-            "stop" : 1704499108134,
-            "duration" : 10356
+            "start" : 1704499443054,
+            "stop" : 1704499447247,
+            "duration" : 4193
           },
           "flaky" : false,
           "newFailed" : false,
