@@ -1,100 +1,100 @@
 {
-  "uid" : "b1b7331fb9de6054",
-  "name" : "Add text comment",
-  "fullName" : "tests.topics_test.TestTopics#test_user_add_text_comment",
-  "historyId" : "a746b61eea2e5348e6ce25d4e0b6144b",
+  "uid" : "dd4094a29793fb68",
+  "name" : "Delete topic",
+  "fullName" : "tests.topics_test.TestTopics#test_user_delete_topic",
+  "historyId" : "f53cd339440fb7bd7b0626d994088edc",
   "time" : {
-    "start" : 1704499422553,
-    "stop" : 1704499432920,
-    "duration" : 10367
+    "start" : 1704499726109,
+    "stop" : 1704499736479,
+    "duration" : 10370
   },
   "status" : "broken",
   "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-  "statusTrace" : "self = <topics_test.TestTopics object at 0x7f9c6e02c2c0>\n\n    @allure.title(\"Add text comment\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_add_text_comment(self):\n>       self.test_user_create_topic_without_cover()\n\ntests/topics_test.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/topics_test.py:19: in test_user_create_topic_without_cover\n    self.topics_page.topic_is_appeared_at_list(topic_name)\npages/topics_page.py:43: in topic_is_appeared_at_list\n    self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"b0eb0e00dbf06aa35df6e5d35d2e5624\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f9c6e0cc220>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "statusTrace" : "self = <topics_test.TestTopics object at 0x7eff5723d550>\n\n    @allure.title(\"Delete topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_delete_topic(self):\n>       self.test_user_create_topic_without_cover()\n\ntests/topics_test.py:59: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/topics_test.py:19: in test_user_create_topic_without_cover\n    self.topics_page.topic_is_appeared_at_list(topic_name)\npages/topics_page.py:43: in topic_is_appeared_at_list\n    self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"d8d54a8a9a25123a039ff89cb74fabaf\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7eff572ec040>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "setup",
-    "time" : {
-      "start" : 1704499418322,
-      "stop" : 1704499418322,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
     "name" : "driver",
     "time" : {
-      "start" : 1704499417504,
-      "stop" : 1704499418322,
-      "duration" : 818
+      "start" : 1704499720866,
+      "stop" : 1704499721681,
+      "duration" : 815
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704499721681,
+      "stop" : 1704499721682,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   }, {
     "name" : "login_open_project_logout",
     "time" : {
-      "start" : 1704499418322,
-      "stop" : 1704499422553,
-      "duration" : 4231
+      "start" : 1704499721682,
+      "stop" : 1704499726109,
+      "duration" : 4427
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Login",
       "time" : {
-        "start" : 1704499418322,
-        "stop" : 1704499421111,
-        "duration" : 2789
+        "start" : 1704499721682,
+        "stop" : 1704499724667,
+        "duration" : 2985
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Open https://space.a-mates.com/login page",
         "time" : {
-          "start" : 1704499418322,
-          "stop" : 1704499419844,
-          "duration" : 1522
+          "start" : 1704499721682,
+          "stop" : 1704499723401,
+          "duration" : 1719
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/login is opened",
         "time" : {
-          "start" : 1704499419844,
-          "stop" : 1704499419847,
-          "duration" : 3
+          "start" : 1704499723401,
+          "stop" : 1704499723403,
+          "duration" : 2
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Enter login",
         "time" : {
-          "start" : 1704499419847,
-          "stop" : 1704499419958,
-          "duration" : 111
+          "start" : 1704499723403,
+          "stop" : 1704499723515,
+          "duration" : 112
         },
         "status" : "passed",
         "steps" : [ ],
@@ -103,15 +103,15 @@
           "name" : "login",
           "value" : "'qa.ac.odg@gmail.com'"
         } ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : true
       }, {
         "name" : "Enter password",
         "time" : {
-          "start" : 1704499419958,
-          "stop" : 1704499420041,
+          "start" : 1704499723515,
+          "stop" : 1704499723598,
           "duration" : 83
         },
         "status" : "passed",
@@ -121,188 +121,188 @@
           "name" : "password",
           "value" : "'Orange609!'"
         } ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : true
       }, {
         "name" : "Click submit button",
         "time" : {
-          "start" : 1704499420041,
-          "stop" : 1704499420098,
-          "duration" : 57
+          "start" : 1704499723598,
+          "stop" : 1704499723654,
+          "duration" : 56
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/projects is opened",
         "time" : {
-          "start" : 1704499420098,
-          "stop" : 1704499421111,
+          "start" : 1704499723654,
+          "stop" : 1704499724667,
           "duration" : 1013
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 6,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 6,
       "hasContent" : true
     }, {
       "name" : "Open My project",
       "time" : {
-        "start" : 1704499421111,
-        "stop" : 1704499422553,
+        "start" : 1704499724667,
+        "stop" : 1704499726109,
         "duration" : 1442
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Click on 'My projects' button in top menu",
         "time" : {
-          "start" : 1704499421111,
-          "stop" : 1704499421160,
+          "start" : 1704499724667,
+          "stop" : 1704499724716,
           "duration" : 49
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Click on 'NAME_OF_MY_PROJECT' button",
         "time" : {
-          "start" : 1704499421160,
-          "stop" : 1704499421548,
-          "duration" : 388
+          "start" : 1704499724716,
+          "stop" : 1704499725103,
+          "duration" : 387
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/topics is opened",
         "time" : {
-          "start" : 1704499421548,
-          "stop" : 1704499422553,
-          "duration" : 1005
+          "start" : 1704499725103,
+          "stop" : 1704499726109,
+          "duration" : 1006
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
         "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 3,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
       "hasContent" : true
     }, {
       "name" : "Logout",
       "time" : {
-        "start" : 1704499422553,
-        "stop" : 1704499422553,
+        "start" : 1704499726109,
+        "stop" : 1704499726109,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 12,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
     "hasContent" : true
   } ],
   "testStage" : {
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-    "statusTrace" : "self = <topics_test.TestTopics object at 0x7f9c6e02c2c0>\n\n    @allure.title(\"Add text comment\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_add_text_comment(self):\n>       self.test_user_create_topic_without_cover()\n\ntests/topics_test.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/topics_test.py:19: in test_user_create_topic_without_cover\n    self.topics_page.topic_is_appeared_at_list(topic_name)\npages/topics_page.py:43: in topic_is_appeared_at_list\n    self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"b0eb0e00dbf06aa35df6e5d35d2e5624\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f9c6e0cc220>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "statusTrace" : "self = <topics_test.TestTopics object at 0x7eff5723d550>\n\n    @allure.title(\"Delete topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_delete_topic(self):\n>       self.test_user_create_topic_without_cover()\n\ntests/topics_test.py:59: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/topics_test.py:19: in test_user_create_topic_without_cover\n    self.topics_page.topic_is_appeared_at_list(topic_name)\npages/topics_page.py:43: in topic_is_appeared_at_list\n    self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"d8d54a8a9a25123a039ff89cb74fabaf\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7eff572ec040>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
     "steps" : [ {
       "name" : "Click add topic button",
       "time" : {
-        "start" : 1704499422554,
-        "stop" : 1704499422640,
+        "start" : 1704499726109,
+        "stop" : 1704499726195,
         "duration" : 86
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Enter new topic name",
       "time" : {
-        "start" : 1704499422640,
-        "stop" : 1704499422801,
-        "duration" : 161
+        "start" : 1704499726195,
+        "stop" : 1704499726360,
+        "duration" : 165
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "topic_name",
-        "value" : "'demo 1704499422.5534914'"
+        "value" : "'demo 1704499726.1090004'"
       } ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : true
     }, {
       "name" : "Click OK button on topic create window",
       "time" : {
-        "start" : 1704499422801,
-        "stop" : 1704499422856,
-        "duration" : 55
+        "start" : 1704499726360,
+        "stop" : 1704499726414,
+        "duration" : 54
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Check if the created topic appear at the list",
       "time" : {
-        "start" : 1704499422856,
-        "stop" : 1704499432919,
-        "duration" : 10063
+        "start" : 1704499726414,
+        "stop" : 1704499736479,
+        "duration" : 10065
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
@@ -311,41 +311,41 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "topic_name",
-        "value" : "'demo 1704499422.5534914'"
+        "value" : "'demo 1704499726.1090004'"
       } ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
       "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1704499434017,
-      "stop" : 1704499434077,
+      "start" : 1704499737538,
+      "stop" : 1704499737598,
       "duration" : 60
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
     "hasContent" : false
   }, {
     "name" : "login_open_project_logout::finalizer",
     "time" : {
-      "start" : 1704499432926,
-      "stop" : 1704499434017,
-      "duration" : 1091
+      "start" : 1704499736486,
+      "stop" : 1704499737538,
+      "duration" : 1052
     },
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1779, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -353,9 +353,9 @@
     "steps" : [ {
       "name" : "Click e-mail button in Top menu",
       "time" : {
-        "start" : 1704499432926,
-        "stop" : 1704499434015,
-        "duration" : 1089
+        "start" : 1704499736486,
+        "stop" : 1704499737536,
+        "duration" : 1050
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1779, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -363,24 +363,24 @@
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
       "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
     "hasContent" : true
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Critical"
-  }, {
     "name" : "feature",
     "value" : "Topics"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
   }, {
     "name" : "tag",
     "value" : "@pytest.mark.usefixtures('login_open_project_logout')"
@@ -398,7 +398,7 @@
     "value" : "TestTopics"
   }, {
     "name" : "host",
-    "value" : "e174e6678b1a"
+    "value" : "31364d373ff1"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -430,33 +430,42 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 2,
+        "broken" : 3,
         "skipped" : 0,
         "passed" : 1,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
-        "uid" : "c7b0bee2ea650e61",
+        "uid" : "c111909b0b94e588",
         "status" : "passed",
         "time" : {
-          "start" : 1704499086483,
-          "stop" : 1704499091910,
-          "duration" : 5427
+          "start" : 1704499443054,
+          "stop" : 1704499447247,
+          "duration" : 4193
         }
       }, {
-        "uid" : "56d5b73e995d6154",
+        "uid" : "8d275efd379f7337",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704499097778,
+          "stop" : 1704499108134,
+          "duration" : 10356
+        }
+      }, {
+        "uid" : "d25680321465334e",
         "status" : "broken",
         "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
         "time" : {
-          "start" : 1704498551466,
-          "stop" : 1704498551466,
+          "start" : 1704498552274,
+          "stop" : 1704498552274,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout')", "smoke" ]
   },
-  "source" : "b1b7331fb9de6054.json",
+  "source" : "dd4094a29793fb68.json",
   "parameterValues" : [ ]
 }

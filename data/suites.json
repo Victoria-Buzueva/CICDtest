@@ -8,52 +8,52 @@
         "name" : "TestTopics",
         "children" : [ {
           "name" : "Create topic without cover",
-          "uid" : "21174452c8703fc0",
+          "uid" : "6a41c9b3b0915ed9",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
           "status" : "passed",
           "time" : {
-            "start" : 1704499393808,
-            "stop" : 1704499398598,
-            "duration" : 4790
+            "start" : 1704499683953,
+            "stop" : 1704499687808,
+            "duration" : 3855
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Create topic with cover",
-          "uid" : "a78299068f548f0d",
+          "uid" : "ed1df42b3004d738",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
           "status" : "broken",
           "time" : {
-            "start" : 1704499403857,
-            "stop" : 1704499417284,
-            "duration" : 13427
+            "start" : 1704499694357,
+            "stop" : 1704499707018,
+            "duration" : 12661
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Add text comment",
-          "uid" : "b1b7331fb9de6054",
+          "uid" : "3d60107e48891802",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1704499422553,
-            "stop" : 1704499432920,
-            "duration" : 10367
+            "start" : 1704499712425,
+            "stop" : 1704499718878,
+            "duration" : 6453
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Delete topic",
-          "uid" : "c111909b0b94e588",
+          "uid" : "dd4094a29793fb68",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1704499443054,
-            "stop" : 1704499447247,
-            "duration" : 4193
+            "start" : 1704499726109,
+            "stop" : 1704499736479,
+            "duration" : 10370
           },
           "flaky" : false,
           "newFailed" : false,

@@ -6,26 +6,26 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "Create topic with cover",
-        "uid" : "a78299068f548f0d",
+        "uid" : "ed1df42b3004d738",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704499403857,
-          "stop" : 1704499417284,
-          "duration" : 13427
+          "start" : 1704499694357,
+          "stop" : 1704499707018,
+          "duration" : 12661
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Add text comment",
-        "uid" : "b1b7331fb9de6054",
+        "name" : "Delete topic",
+        "uid" : "dd4094a29793fb68",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704499422553,
-          "stop" : 1704499432920,
-          "duration" : 10367
+          "start" : 1704499726109,
+          "stop" : 1704499736479,
+          "duration" : 10370
         },
         "flaky" : false,
         "newFailed" : false,
