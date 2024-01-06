@@ -8,52 +8,52 @@
         "name" : "TestTopics",
         "children" : [ {
           "name" : "Create topic without cover",
-          "uid" : "6a41c9b3b0915ed9",
+          "uid" : "619ffa8ba1eae0b7",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
           "status" : "passed",
           "time" : {
-            "start" : 1704499683953,
-            "stop" : 1704499687808,
-            "duration" : 3855
+            "start" : 1704500101259,
+            "stop" : 1704500105105,
+            "duration" : 3846
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Create topic with cover",
-          "uid" : "ed1df42b3004d738",
+          "uid" : "a1f50efcf069a516",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
           "status" : "broken",
           "time" : {
-            "start" : 1704499694357,
-            "stop" : 1704499707018,
-            "duration" : 12661
+            "start" : 1704500111651,
+            "stop" : 1704500124063,
+            "duration" : 12412
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Add text comment",
-          "uid" : "3d60107e48891802",
+          "uid" : "19223dd920d8328c",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1704499712425,
-            "stop" : 1704499718878,
-            "duration" : 6453
+            "start" : 1704500130398,
+            "stop" : 1704500140750,
+            "duration" : 10352
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Delete topic",
-          "uid" : "dd4094a29793fb68",
+          "uid" : "cb6b4201d8c2ce5e",
           "parentUid" : "b5197e83e64af23c50c675175d4ffa10",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1704499726109,
-            "stop" : 1704499736479,
-            "duration" : 10370
+            "start" : 1704500147120,
+            "stop" : 1704500152378,
+            "duration" : 5258
           },
           "flaky" : false,
           "newFailed" : false,
