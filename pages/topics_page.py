@@ -39,7 +39,7 @@ class TopicsPage(BasePage):
 
     @allure.step("Check if the created topic appear at the list")
     def topic_is_appeared_at_list(self, topic_name):
-        self.make_screenshot("Succsess")
+        # self.make_screenshot("Succsess")
         NEW_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{topic_name}']")
         self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))
 

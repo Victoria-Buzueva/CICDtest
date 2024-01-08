@@ -51,6 +51,15 @@ class TestTopics(BaseTest):
         self.topics_page.last_comment_has_text(self.new_comment)
         self.topics_page.delete_created_topic()
 
+    # @allure.title("Edit text comment")
+    # @allure.severity("Critical")
+    # @pytest.mark.smoke
+    # @pytest.mark.usefixtures("login_open_project_logout")
+    # def test_user_edit_text_comment(self):
+    #     self.test_user_add_text_comment()
+
+        # self.topics_page.delete_created_topic()
+
     @allure.title("Delete topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
