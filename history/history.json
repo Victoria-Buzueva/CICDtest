@@ -2,13 +2,22 @@
   "6aa7b2dcc614092fb838c8626a31c199" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "7283236e31bc408e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704708813069,
+        "stop" : 1704708823455,
+        "duration" : 10386
+      }
+    }, {
       "uid" : "619ffa8ba1eae0b7",
       "status" : "passed",
       "time" : {
@@ -55,13 +64,22 @@
   "a746b61eea2e5348e6ce25d4e0b6144b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "a6745f21ea58d940",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704708839850,
+        "stop" : 1704708850456,
+        "duration" : 10606
+      }
+    }, {
       "uid" : "19223dd920d8328c",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -111,11 +129,19 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "cd8549e70d0952d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704708829745,
+        "stop" : 1704708833605,
+        "duration" : 3860
+      }
+    }, {
       "uid" : "a1f50efcf069a516",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -165,13 +191,22 @@
   "f53cd339440fb7bd7b0626d994088edc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "4a28f912a880286e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704708856942,
+        "stop" : 1704708867524,
+        "duration" : 10582
+      }
+    }, {
       "uid" : "cb6b4201d8c2ce5e",
       "status" : "passed",
       "time" : {

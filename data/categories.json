@@ -5,27 +5,40 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Create topic with cover",
-        "uid" : "a1f50efcf069a516",
+        "name" : "Create topic without cover",
+        "uid" : "7283236e31bc408e",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704500111651,
-          "stop" : 1704500124063,
-          "duration" : 12412
+          "start" : 1704708813069,
+          "stop" : 1704708823455,
+          "duration" : 10386
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Add text comment",
-        "uid" : "19223dd920d8328c",
+        "uid" : "a6745f21ea58d940",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704500130398,
-          "stop" : 1704500140750,
-          "duration" : 10352
+          "start" : 1704708839850,
+          "stop" : 1704708850456,
+          "duration" : 10606
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete topic",
+        "uid" : "4a28f912a880286e",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704708856942,
+          "stop" : 1704708867524,
+          "duration" : 10582
         },
         "flaky" : false,
         "newFailed" : false,
