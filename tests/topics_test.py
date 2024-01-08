@@ -35,7 +35,7 @@ class TestTopics(BaseTest):
         self.topics_page.topic_is_appeared_at_list(self.topic_name)
         self.topics_page.topic_has_cover(self.topic_name)
         self.topics_page.topic_is_opened()
-        self.topics_page.make_screenshot("Succsess")
+        # self.topics_page.make_screenshot("Succsess")
         self.topics_page.delete_created_topic()
 
     # @pytest.mark.skip
