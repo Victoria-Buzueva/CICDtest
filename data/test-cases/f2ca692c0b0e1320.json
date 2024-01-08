@@ -1,0 +1,623 @@
+{
+  "uid" : "f2ca692c0b0e1320",
+  "name" : "Create topic without cover",
+  "fullName" : "tests.topics_test.TestTopics#test_user_create_topic_without_cover",
+  "historyId" : "6aa7b2dcc614092fb838c8626a31c199",
+  "time" : {
+    "start" : 1704709964640,
+    "stop" : 1704709967964,
+    "duration" : 3324
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1704709956342,
+      "stop" : 1704709957294,
+      "duration" : 952
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704709957294,
+      "stop" : 1704709957294,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_open_project_logout",
+    "time" : {
+      "start" : 1704709957294,
+      "stop" : 1704709964639,
+      "duration" : 7345
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login",
+      "time" : {
+        "start" : 1704709957294,
+        "stop" : 1704709962052,
+        "duration" : 4758
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open https://space.a-mates.com/login page",
+        "time" : {
+          "start" : 1704709957294,
+          "stop" : 1704709959745,
+          "duration" : 2451
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/login is opened",
+        "time" : {
+          "start" : 1704709959745,
+          "stop" : 1704709959748,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Enter login",
+        "time" : {
+          "start" : 1704709959748,
+          "stop" : 1704709959885,
+          "duration" : 137
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "login",
+          "value" : "'test5brest+13@gmail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Enter password",
+        "time" : {
+          "start" : 1704709959885,
+          "stop" : 1704709959973,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'Orange609!'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click submit button",
+        "time" : {
+          "start" : 1704709959973,
+          "stop" : 1704709960035,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/projects is opened",
+        "time" : {
+          "start" : 1704709960035,
+          "stop" : 1704709962052,
+          "duration" : 2017
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 6,
+      "hasContent" : true
+    }, {
+      "name" : "Open My project",
+      "time" : {
+        "start" : 1704709962052,
+        "stop" : 1704709964639,
+        "duration" : 2587
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on 'My projects' button in top menu",
+        "time" : {
+          "start" : 1704709962052,
+          "stop" : 1704709962105,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click on 'NAME_OF_MY_PROJECT' button",
+        "time" : {
+          "start" : 1704709962105,
+          "stop" : 1704709962611,
+          "duration" : 506
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/topics is opened",
+        "time" : {
+          "start" : 1704709962611,
+          "stop" : 1704709964639,
+          "duration" : 2028
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Logout",
+      "time" : {
+        "start" : 1704709964639,
+        "stop" : 1704709964639,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click add topic button",
+      "time" : {
+        "start" : 1704709964640,
+        "stop" : 1704709964915,
+        "duration" : 275
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter new topic name",
+      "time" : {
+        "start" : 1704709964915,
+        "stop" : 1704709965162,
+        "duration" : 247
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704709964.6399348'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click OK button on topic create window",
+      "time" : {
+        "start" : 1704709965162,
+        "stop" : 1704709965216,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the created topic appear at the list",
+      "time" : {
+        "start" : 1704709965216,
+        "stop" : 1704709966413,
+        "duration" : 1197
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3572ec75d7090ae",
+        "name" : "Succsess",
+        "source" : "3572ec75d7090ae.png",
+        "type" : "image/png",
+        "size" : 111960
+      } ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704709964.6399348'"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Check if the created topic is opened",
+      "time" : {
+        "start" : 1704709966413,
+        "stop" : 1704709966431,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Delete created topic in the end of test",
+      "time" : {
+        "start" : 1704709966595,
+        "stop" : 1704709967964,
+        "duration" : 1369
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click topic settings button",
+        "time" : {
+          "start" : 1704709966595,
+          "stop" : 1704709966784,
+          "duration" : 189
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click topic delete button",
+        "time" : {
+          "start" : 1704709966785,
+          "stop" : 1704709966890,
+          "duration" : 105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click topic yes button in topic delete alert",
+        "time" : {
+          "start" : 1704709966890,
+          "stop" : 1704709966946,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Check if the deleted topic disappear from the topic list",
+        "time" : {
+          "start" : 1704709966946,
+          "stop" : 1704709967964,
+          "duration" : 1018
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "6e64232429c2ba60",
+      "name" : "Succsess",
+      "source" : "6e64232429c2ba60.png",
+      "type" : "image/png",
+      "size" : 97459
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1704709969121,
+      "stop" : 1704709969207,
+      "duration" : 86
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_open_project_logout::finalizer",
+    "time" : {
+      "start" : 1704709967964,
+      "stop" : 1704709969120,
+      "duration" : 1156
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click e-mail button in Top menu",
+      "time" : {
+        "start" : 1704709967964,
+        "stop" : 1704709968019,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click logout button in Top menu",
+      "time" : {
+        "start" : 1704709968019,
+        "stop" : 1704709969082,
+        "duration" : 1063
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://space.a-mates.com/login is opened",
+      "time" : {
+        "start" : 1704709969082,
+        "stop" : 1704709969120,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Topics"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_open_project_logout')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "topics_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTopics"
+  }, {
+    "name" : "host",
+    "value" : "53636853ef2b"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.topics_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "b6acc05c782d5c77",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+        "time" : {
+          "start" : 1704709272609,
+          "stop" : 1704709272929,
+          "duration" : 320
+        }
+      }, {
+        "uid" : "7283236e31bc408e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704708813069,
+          "stop" : 1704708823455,
+          "duration" : 10386
+        }
+      }, {
+        "uid" : "619ffa8ba1eae0b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704500101259,
+          "stop" : 1704500105105,
+          "duration" : 3846
+        }
+      }, {
+        "uid" : "6a41c9b3b0915ed9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704499683953,
+          "stop" : 1704499687808,
+          "duration" : 3855
+        }
+      }, {
+        "uid" : "21174452c8703fc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704499393808,
+          "stop" : 1704499398598,
+          "duration" : 4790
+        }
+      }, {
+        "uid" : "d0bbb017a0344756",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704499051463,
+          "stop" : 1704499061810,
+          "duration" : 10347
+        }
+      }, {
+        "uid" : "1cbf173b88109da4",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1704498549728,
+          "stop" : 1704498549728,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout')", "smoke" ]
+  },
+  "source" : "f2ca692c0b0e1320.json",
+  "parameterValues" : [ ]
+}

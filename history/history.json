@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 4,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "f2ca692c0b0e1320",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704709964640,
+        "stop" : 1704709967964,
+        "duration" : 3324
+      }
+    }, {
       "uid" : "b6acc05c782d5c77",
       "status" : "broken",
       "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
@@ -75,11 +83,19 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "24ee9c9e22f01353",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704709992639,
+        "stop" : 1704709998312,
+        "duration" : 5673
+      }
+    }, {
       "uid" : "4c8b1a6552576726",
       "status" : "broken",
       "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
@@ -147,11 +163,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "a5499f16d220754",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704709977139,
+        "stop" : 1704709982355,
+        "duration" : 5216
+      }
+    }, {
       "uid" : "761fb75de136ef45",
       "status" : "broken",
       "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
@@ -220,11 +244,19 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "d23ed2ff2af8956d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704710008377,
+        "stop" : 1704710012944,
+        "duration" : 4567
+      }
+    }, {
       "uid" : "2e026338d16ea849",
       "status" : "broken",
       "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
