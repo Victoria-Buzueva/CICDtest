@@ -1,41 +1,41 @@
 [ {
-  "uid" : "cd8549e70d0952d2",
-  "name" : "Create topic with cover",
-  "time" : {
-    "start" : 1704708829745,
-    "stop" : 1704708833605,
-    "duration" : 3860
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4a28f912a880286e",
+  "uid" : "2e026338d16ea849",
   "name" : "Delete topic",
   "time" : {
-    "start" : 1704708856942,
-    "stop" : 1704708867524,
-    "duration" : 10582
+    "start" : 1704709295944,
+    "stop" : 1704709296304,
+    "duration" : 360
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "7283236e31bc408e",
+  "uid" : "b6acc05c782d5c77",
   "name" : "Create topic without cover",
   "time" : {
-    "start" : 1704708813069,
-    "stop" : 1704708823455,
-    "duration" : 10386
+    "start" : 1704709272609,
+    "stop" : 1704709272929,
+    "duration" : 320
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "a6745f21ea58d940",
+  "uid" : "4c8b1a6552576726",
   "name" : "Add text comment",
   "time" : {
-    "start" : 1704708839850,
-    "stop" : 1704708850456,
-    "duration" : 10606
+    "start" : 1704709288497,
+    "stop" : 1704709288810,
+    "duration" : 313
   },
   "status" : "broken",
   "severity" : "critical"
+}, {
+  "uid" : "761fb75de136ef45",
+  "name" : "Create topic with cover",
+  "time" : {
+    "start" : 1704709280328,
+    "stop" : 1704709281715,
+    "duration" : 1387
+  },
+  "status" : "broken",
+  "severity" : "normal"
 } ]

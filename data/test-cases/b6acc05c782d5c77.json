@@ -1,0 +1,496 @@
+{
+  "uid" : "b6acc05c782d5c77",
+  "name" : "Create topic without cover",
+  "fullName" : "tests.topics_test.TestTopics#test_user_create_topic_without_cover",
+  "historyId" : "6aa7b2dcc614092fb838c8626a31c199",
+  "time" : {
+    "start" : 1704709272609,
+    "stop" : 1704709272929,
+    "duration" : 320
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+  "statusTrace" : "self = <topics_test.TestTopics object at 0x7f27586a89b0>\n\n    @allure.title(\"Create topic without cover\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_create_topic_without_cover(self):\n        topic_name = \"demo \" + str(time.time())\n        self.topics_page.click_add_topic_button()\n        self.topics_page.enter_topic_name_in_create_topic_window(topic_name)\n        self.topics_page.click_ok_button_in_create_topic_window()\n>       self.topics_page.topic_is_appeared_at_list(topic_name)\n\ntests/topics_test.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f27586aa420>\ntopic_name = 'demo 1704709272.6088796'\n\n    @allure.step(\"Check if the created topic appear at the list\")\n    def topic_is_appeared_at_list(self, topic_name):\n>       self.topics_page.make_screenshot(\"Succsess\")\nE       AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?\n\npages/topics_page.py:42: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_open_project_logout",
+    "time" : {
+      "start" : 1704709268023,
+      "stop" : 1704709272608,
+      "duration" : 4585
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login",
+      "time" : {
+        "start" : 1704709268023,
+        "stop" : 1704709270854,
+        "duration" : 2831
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open https://space.a-mates.com/login page",
+        "time" : {
+          "start" : 1704709268023,
+          "stop" : 1704709269567,
+          "duration" : 1544
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Page https://space.a-mates.com/login is opened",
+        "time" : {
+          "start" : 1704709269567,
+          "stop" : 1704709269570,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Enter login",
+        "time" : {
+          "start" : 1704709269570,
+          "stop" : 1704709269699,
+          "duration" : 129
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "login",
+          "value" : "'test5brest+13@gmail.com'"
+        } ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Enter password",
+        "time" : {
+          "start" : 1704709269699,
+          "stop" : 1704709269779,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'Orange609!'"
+        } ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click submit button",
+        "time" : {
+          "start" : 1704709269779,
+          "stop" : 1704709269835,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Page https://space.a-mates.com/projects is opened",
+        "time" : {
+          "start" : 1704709269835,
+          "stop" : 1704709270854,
+          "duration" : 1019
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 6
+    }, {
+      "name" : "Open My project",
+      "time" : {
+        "start" : 1704709270854,
+        "stop" : 1704709272608,
+        "duration" : 1754
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on 'My projects' button in top menu",
+        "time" : {
+          "start" : 1704709270854,
+          "stop" : 1704709270996,
+          "duration" : 142
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click on 'NAME_OF_MY_PROJECT' button",
+        "time" : {
+          "start" : 1704709270996,
+          "stop" : 1704709271539,
+          "duration" : 543
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Page https://space.a-mates.com/topics is opened",
+        "time" : {
+          "start" : 1704709271539,
+          "stop" : 1704709272608,
+          "duration" : 1069
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3
+    }, {
+      "name" : "Logout",
+      "time" : {
+        "start" : 1704709272608,
+        "stop" : 1704709272608,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1704709267134,
+      "stop" : 1704709268023,
+      "duration" : 889
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704709268023,
+      "stop" : 1704709268023,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+    "statusTrace" : "self = <topics_test.TestTopics object at 0x7f27586a89b0>\n\n    @allure.title(\"Create topic without cover\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\")\n    def test_user_create_topic_without_cover(self):\n        topic_name = \"demo \" + str(time.time())\n        self.topics_page.click_add_topic_button()\n        self.topics_page.enter_topic_name_in_create_topic_window(topic_name)\n        self.topics_page.click_ok_button_in_create_topic_window()\n>       self.topics_page.topic_is_appeared_at_list(topic_name)\n\ntests/topics_test.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f27586aa420>\ntopic_name = 'demo 1704709272.6088796'\n\n    @allure.step(\"Check if the created topic appear at the list\")\n    def topic_is_appeared_at_list(self, topic_name):\n>       self.topics_page.make_screenshot(\"Succsess\")\nE       AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?\n\npages/topics_page.py:42: AttributeError",
+    "steps" : [ {
+      "name" : "Click add topic button",
+      "time" : {
+        "start" : 1704709272609,
+        "stop" : 1704709272693,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter new topic name",
+      "time" : {
+        "start" : 1704709272693,
+        "stop" : 1704709272868,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704709272.6088796'"
+      } ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click OK button on topic create window",
+      "time" : {
+        "start" : 1704709272868,
+        "stop" : 1704709272927,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Check if the created topic appear at the list",
+      "time" : {
+        "start" : 1704709272927,
+        "stop" : 1704709272927,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/topics_page.py\", line 42, in topic_is_appeared_at_list\n    self.topics_page.make_screenshot(\"Succsess\")\n    ^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704709272.6088796'"
+      } ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "login_open_project_logout::finalizer",
+    "time" : {
+      "start" : 1704709272957,
+      "stop" : 1704709274229,
+      "duration" : 1272
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1766, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
+    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 221, in __call__\n    return self._fixture_function(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/base/base_test.py\", line 42, in finalizer\n    self.topics_page.click_email_button_in_top_menu()\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/topics_page.py\", line 102, in click_email_button_in_top_menu\n    email_button.click()\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 94, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 395, in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 348, in execute\n    self.error_handler.check_response(response)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Click e-mail button in Top menu",
+      "time" : {
+        "start" : 1704709272957,
+        "stop" : 1704709274227,
+        "duration" : 1270
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1766, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/topics_page.py\", line 102, in click_email_button_in_top_menu\n    email_button.click()\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 94, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 395, in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 348, in execute\n    self.error_handler.check_response(response)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1704709274230,
+      "stop" : 1704709274317,
+      "duration" : 87
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Topics"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_open_project_logout')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "topics_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTopics"
+  }, {
+    "name" : "host",
+    "value" : "a5e0e96eeb7d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.topics_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "7283236e31bc408e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704708813069,
+          "stop" : 1704708823455,
+          "duration" : 10386
+        }
+      }, {
+        "uid" : "619ffa8ba1eae0b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704500101259,
+          "stop" : 1704500105105,
+          "duration" : 3846
+        }
+      }, {
+        "uid" : "6a41c9b3b0915ed9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704499683953,
+          "stop" : 1704499687808,
+          "duration" : 3855
+        }
+      }, {
+        "uid" : "21174452c8703fc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704499393808,
+          "stop" : 1704499398598,
+          "duration" : 4790
+        }
+      }, {
+        "uid" : "d0bbb017a0344756",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704499051463,
+          "stop" : 1704499061810,
+          "duration" : 10347
+        }
+      }, {
+        "uid" : "1cbf173b88109da4",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1704498549728,
+          "stop" : 1704498549728,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout')", "smoke" ]
+  },
+  "source" : "b6acc05c782d5c77.json",
+  "parameterValues" : [ ]
+}

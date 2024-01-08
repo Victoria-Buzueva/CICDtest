@@ -2,13 +2,22 @@
   "6aa7b2dcc614092fb838c8626a31c199" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "b6acc05c782d5c77",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+      "time" : {
+        "start" : 1704709272609,
+        "stop" : 1704709272929,
+        "duration" : 320
+      }
+    }, {
       "uid" : "7283236e31bc408e",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -64,13 +73,22 @@
   "a746b61eea2e5348e6ce25d4e0b6144b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "4c8b1a6552576726",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+      "time" : {
+        "start" : 1704709288497,
+        "stop" : 1704709288810,
+        "duration" : 313
+      }
+    }, {
       "uid" : "a6745f21ea58d940",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -127,13 +145,22 @@
   "6dec78be3e8364aed50d4c9c053686d1" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "761fb75de136ef45",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+      "time" : {
+        "start" : 1704709280328,
+        "stop" : 1704709281715,
+        "duration" : 1387
+      }
+    }, {
       "uid" : "cd8549e70d0952d2",
       "status" : "passed",
       "time" : {
@@ -191,13 +218,22 @@
   "f53cd339440fb7bd7b0626d994088edc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "2e026338d16ea849",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+      "time" : {
+        "start" : 1704709295944,
+        "stop" : 1704709296304,
+        "duration" : 360
+      }
+    }, {
       "uid" : "4a28f912a880286e",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
