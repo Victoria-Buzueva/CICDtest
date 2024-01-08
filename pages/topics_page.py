@@ -89,12 +89,17 @@ class TopicsPage(BasePage):
         DELETE_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{self.topic_name}']")
         self.wait.until(EC.invisibility_of_element_located(DELETE_TOPIC_LOCATOR))
 
-    @allure.step('Delete created topic in the end of test')
-    def delete_created_topic(self):
-        self.click_topic_settings_button()
-        self.click_topic_delete_button()
-        self.click_delete_alert_yes_button()
-        self.topic_is_disappear_from_topic_list()
+
+    # @allure.step('Delete created topic in the end of test')
+    # @pytest.fixture()
+    # def delete_created_topic(self, request):
+    #     with allure.step("Logout"):
+    #         def finalizer():
+    #             self.click_topic_settings_button()
+    #             self.click_topic_delete_button()
+    #             self.click_delete_alert_yes_button()
+    #             self.topic_is_disappear_from_topic_list()
+    #         request.addfinalizer(finalizer)
 
     @allure.step("Click e-mail button in Top menu")
     def click_email_button_in_top_menu(self):
@@ -105,3 +110,26 @@ class TopicsPage(BasePage):
     def click_logout_button_in_top_menu(self):
         logout_button = self.wait.until(EC.element_to_be_clickable(MenuLocators.LOGOUT_BUTTON))
         logout_button.click()
+
+        # @pytest.fixture
+    # def ddd(self, request):
+    #     with allure.step("Login"):
+    #         self.login_page.open()
+    #         self.login_page.is_opened()
+    #         self.login_page.enter_login(self.data.LOGIN)
+    #         self.login_page.enter_password(self.data.PASSWORD)
+    #         self.login_page.click_submit_button()
+    #         self.my_project_page.is_opened()
+    #     with allure.step("Open My project"):
+    #         self.my_project_page.open_my_projects_page()
+    #         self.my_project_page.open_my_project()
+    #         self.topics_page.is_opened()
+    #
+    #     with allure.step("Logout"):
+    #         def finalizer():
+    #
+    #             self.topics_page.click_email_button_in_top_menu()
+    #             self.topics_page.click_logout_button_in_top_menu()
+    #             self.login_page.is_opened()
+    #
+    #         request.addfinalizer(finalizer)

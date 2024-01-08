@@ -22,6 +22,7 @@ class BaseTest:
         request.cls.my_project_page = MyProjectsPage(driver)
         request.cls.topics_page = TopicsPage(driver)
 
+    @allure.step("Fixture: Login, open My project, Logout")
     @pytest.fixture
     def login_open_project_logout(self, request):
         with allure.step("Login"):
@@ -45,3 +46,22 @@ class BaseTest:
 
             request.addfinalizer(finalizer)
 
+    @allure.step("Fixture: Delete created topic in the end of test")
+    @pytest.fixture()
+    def delete_created_topic(self, request):
+            def finalizer():
+                self.topics_page.click_topic_settings_button()
+                self.topics_page.click_topic_delete_button()
+                self.topics_page.click_delete_alert_yes_button()
+                self.topics_page.topic_is_disappear_from_topic_list()
+            request.addfinalizer(finalizer)
+
+    @allure.step("Fixture: Create topic without cover")
+    @pytest.fixture()
+    def create_topic_without_cover(self):
+        topic_name = "demo " + str(time.time())
+        self.topics_page.click_add_topic_button()
+        self.topics_page.enter_topic_name_in_create_topic_window(topic_name)
+        self.topics_page.click_ok_button_in_create_topic_window()
+        self.topics_page.topic_is_appeared_at_list(topic_name)
+        self.topics_page.topic_is_opened()
