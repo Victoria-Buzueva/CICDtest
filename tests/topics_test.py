@@ -93,7 +93,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_topic_delete_alert_yes_button()
         self.topics_page.topic_is_disappear_from_topic_list()
 
-    # @pytest.mark.skip
+    @pytest.mark.skip
     @allure.title("Successful topic search")
     @allure.severity("Major")
     @pytest.mark.smoke
@@ -103,5 +103,25 @@ class TestTopics(BaseTest):
         self.topics_page.enter_topic_search()
         self.topics_page.check_topic_search_result()
 
+    @pytest.mark.skip
+    @allure.title("Successful comment search")
+    @allure.severity("Major")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout")
+    def test_user_success_comment_search(self):
+        self.topics_page.click_search_topic_button()
+        self.topics_page.enter_comment_search()
+        self.topics_page.check_comment_search_result()
+
+    # @pytest.mark.skip
+    @allure.title("Search with empty results")
+    @allure.severity("Major")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout")
+    def test_user_search_with_empty_resuls(self):
+        self.topics_page.click_search_topic_button()
+        self.topics_page.enter_empty_search()
+        self.topics_page.check_empty_search_result()
 
 
+# EOF

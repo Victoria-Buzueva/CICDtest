@@ -198,3 +198,29 @@ class TopicsPage(BasePage):
                 count_elements_with_search_text += 1
         assert count_elements == count_elements_with_search_text, f'Not all found topics contain the substring {self.success_topic_search}'
 
+    @allure.step("Enter comment search")
+    def enter_comment_search(self):
+        topic_search = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SEARCH_FIELD))
+        self.success_topic_search = 'comment'
+        topic_search.send_keys(self.success_topic_search)
+    @allure.step("Check comment search result not null and contains a search string")
+    def check_comment_search_result(self):
+        list_search_result = self.wait.until(EC.visibility_of_any_elements_located(TopicsLocators.TOPIC_SEARCH_COMMENT_RESULT_BOLD))
+        count_elements = len(list_search_result)
+        assert count_elements != 0, "None of the comments were found"
+        count_elements_with_search_text = 0
+        for topic in list_search_result:
+            topic_text_in_list = topic.text.strip()  # getting text from an element
+            if self.success_topic_search == topic_text_in_list:  # checking for the presence of the "topic_search" line and increasing the counter if available
+                count_elements_with_search_text += 1
+        assert count_elements == count_elements_with_search_text, f'Not all found comments contain the substring {self.success_topic_search}'
+
+    @allure.step("Enter empty search")
+    def enter_empty_search(self):
+        topic_search = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SEARCH_FIELD))
+        topic_search.send_keys(str(time.time()) + str(time.time()) + str(time.time()))
+
+    @allure.step("Check topic search has empty results")
+    def check_empty_search_result(self):
+        self.wait.until(EC.visibility_of_element_located(TopicsLocators.TOPIC_EMPTY_SEARCH_PICTURE))
+        self.wait.until(EC.visibility_of_element_located(TopicsLocators.TOPIC_EMPTY_SEARCH_TITLE))
