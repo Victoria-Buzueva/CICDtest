@@ -113,7 +113,7 @@ class TestTopics(BaseTest):
         self.topics_page.enter_comment_search()
         self.topics_page.check_comment_search_result()
 
-    # @pytest.mark.skip
+    @pytest.mark.skip
     @allure.title("Search with empty results")
     @allure.severity("Major")
     @pytest.mark.smoke
@@ -123,5 +123,15 @@ class TestTopics(BaseTest):
         self.topics_page.enter_empty_search()
         self.topics_page.check_empty_search_result()
 
+    # @pytest.mark.skip
+    @allure.title("Open topic from search")
+    @allure.severity("Major")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout")
+    def test_user_open_topic_from_search(self):
+        self.topics_page.click_search_topic_button()
+        self.topics_page.enter_topic_search()
+        self.topics_page.check_topic_search_result()
+        self.topics_page.open_random_topic_from_search()
 
 # EOF

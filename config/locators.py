@@ -43,6 +43,7 @@ class TopicsLocators:
     TOPIC_SEARCH_CLEAR_BUTTON = ('xpath', '//button[.//*[@width="20" and @height="20"]]')
     TOPIC_SEARCH_BACK_BUTTON = ('xpath', '//button[.//*[@width="1em" and @height="1em"]]')
     TOPIC_SEARCH_TOPIC_RESULT_BOLD = ('xpath', '//div[@class="TopicStyles_shortText__r+LnB"]/b')
+    TOPIC_SEARCH_TOPIC_RESULT = ('xpath', '//div[@class="TopicStyles_shortText__r+LnB"]')
     TOPIC_SEARCH_COMMENT_RESULT_BOLD = ('xpath', '//div[@class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap"]//b')
     TOPIC_EMPTY_SEARCH_PICTURE = ('xpath', '//img[@src="/img/shock_smile.png"]')
     TOPIC_EMPTY_SEARCH_TITLE = ('xpath', '//p[text()="No results found"]')

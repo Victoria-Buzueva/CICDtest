@@ -1,5 +1,6 @@
 import allure
 import pytest
+import random
 import os
 from base.base_page import BasePage
 from config.links import Links
@@ -203,6 +204,7 @@ class TopicsPage(BasePage):
         topic_search = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SEARCH_FIELD))
         self.success_topic_search = 'comment'
         topic_search.send_keys(self.success_topic_search)
+
     @allure.step("Check comment search result not null and contains a search string")
     def check_comment_search_result(self):
         list_search_result = self.wait.until(EC.visibility_of_any_elements_located(TopicsLocators.TOPIC_SEARCH_COMMENT_RESULT_BOLD))
@@ -222,5 +224,17 @@ class TopicsPage(BasePage):
 
     @allure.step("Check topic search has empty results")
     def check_empty_search_result(self):
+        # self.wait.until(EC.invisibility_of_element_located(TopicsLocators.TOPIC_SEARCH_TOPIC_RESULT_BOLD))
+        # self.wait.until(EC.invisibility_of_element_located(TopicsLocators.TOPIC_SEARCH_COMMENT_RESULT_BOLD))
         self.wait.until(EC.visibility_of_element_located(TopicsLocators.TOPIC_EMPTY_SEARCH_PICTURE))
         self.wait.until(EC.visibility_of_element_located(TopicsLocators.TOPIC_EMPTY_SEARCH_TITLE))
+
+    @allure.step("Open random topic from search")
+    def open_random_topic_from_search(self):
+        list_search_result = self.wait.until(EC.visibility_of_any_elements_located(TopicsLocators.TOPIC_SEARCH_TOPIC_RESULT))
+        if len(list_search_result) > 0:
+            random_element = random.choice(list_search_result)
+            random_element.click()
+            self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.TOPIC_NAME_IN_NAVBAR, random_element.text))
+            topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_NAME_IN_NAVBAR))
+            assert topic_name.text == random_element.text, "The name of the open topic does not match the text you edited topic"
