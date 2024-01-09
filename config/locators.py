@@ -37,6 +37,13 @@ class TopicsLocators:
     EDIT_TOPIC_NAME_FIELD = ('xpath', '//textarea[@id="addTopicInput"]')
     TOPIC_EDIT_ALERT_SAVE_BUTTON = ('xpath', '//button/span[text()="Save"]')
     TOPIC_EDIT_ALERT_CANCEL_BUTTON = ('xpath', '//button/span[text()="Cancel"]')
+    # Topic search locators
+    TOPIC_SEARCH_BUTTON = ('xpath', '//button[.//*[@width="20" and @height="20"]]')
+    TOPIC_SEARCH_FIELD = ('xpath', '//input[@placeholder = "Search..."]')
+    TOPIC_SEARCH_CLEAR_BUTTON = ('xpath', '//button[.//*[@width="20" and @height="20"]]')
+    TOPIC_SEARCH_BACK_BUTTON = ('xpath', '//button[.//*[@width="1em" and @height="1em"]]')
+    TOPIC_SEARCH_TOPIC_RESULT_BOLD = ('xpath', '//div[@class="TopicStyles_shortText__r+LnB"]/b')
+    TOPIC_SEARCH_COMMENT_RESULT_BOLD = ('xpath', '//div[@class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap"]//b')
     # Comment locators
     COMMENT_INPUT_FIELD = ('xpath', '//textarea[@id="messageInput"]')
     COMMENT_SEND_BUTTON = ('xpath', '//button[.//*[@width="40" and @height="40"]]')

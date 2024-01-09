@@ -174,3 +174,27 @@ class TopicsPage(BasePage):
     def click_logout_button_in_top_menu(self):
         logout_button = self.wait.until(EC.element_to_be_clickable(MenuLocators.LOGOUT_BUTTON))
         logout_button.click()
+
+    @allure.step("Click search topic button")
+    def click_search_topic_button(self):
+        search_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SEARCH_BUTTON))
+        search_button.click()
+
+    @allure.step("Enter topic search")
+    def enter_topic_search(self):
+        topic_search = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SEARCH_FIELD))
+        self.success_topic_search = 'demo'
+        topic_search.send_keys(self.success_topic_search)
+
+    @allure.step("Check topic search result not null and contains a search string")
+    def check_topic_search_result(self):
+        list_search_result = self.wait.until(EC.visibility_of_any_elements_located(TopicsLocators.TOPIC_SEARCH_TOPIC_RESULT_BOLD))
+        count_elements = len(list_search_result)
+        assert count_elements != 0, "None of the topics were found"
+        count_elements_with_search_text = 0
+        for topic in list_search_result:
+            topic_text_in_list = topic.text.strip()  # getting text from an element
+            if self.success_topic_search == topic_text_in_list:  # checking for the presence of the "topic_search" line and increasing the counter if available
+                count_elements_with_search_text += 1
+        assert count_elements == count_elements_with_search_text, f'Not all found topics contain the substring {self.success_topic_search}'
+
