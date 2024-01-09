@@ -39,9 +39,9 @@ class TopicsPage(BasePage):
         ok_button.click()
 
     @allure.step("Check if the created topic appear at the list")
-    def topic_is_appeared_at_list(self, topic_name):
+    def topic_is_appeared_at_list(self):
         # self.make_screenshot("Succsess")
-        NEW_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{topic_name}']")
+        NEW_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{self.topic_name}']")
         self.wait.until(EC.visibility_of_element_located(NEW_TOPIC_LOCATOR))
 
     @allure.step("Check if the created topic has cover")
@@ -84,9 +84,9 @@ class TopicsPage(BasePage):
         edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))
         edit_field.send_keys(Keys.COMMAND + "A")
         edit_field.send_keys(Keys.BACKSPACE)
-        assert edit_field.get_attribute("value") == "", "There is a text after clear edit field"
+        assert edit_field.get_attribute("value") == "", "There is a text after clear edit comment field"
 
-    @allure.step('Enter text in edit comment')
+    @allure.step('Enter text in edit comment field')
     def enter_edit_comment(self):
         edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))
         self.new_comment = "edited"
@@ -115,6 +115,40 @@ class TopicsPage(BasePage):
     def click_topic_settings_button(self):
         settings_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SETTINGS_BUTTON))
         settings_button.click()
+
+    @allure.step('Click topic edit button')
+    def click_topic_edit_button(self):
+        edit_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_EDIT_BUTTON))
+        edit_button.click()
+
+    @allure.step('Clear edit topic field')
+    def clear_edit_topic_field(self):
+        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))
+        edit_field.send_keys(Keys.COMMAND + "A")
+        edit_field.send_keys(Keys.BACKSPACE)
+        assert edit_field.get_attribute("value") == "", "There is a text after clear edit topic field"
+
+    @allure.step('Enter text in edit topic field')
+    def enter_edit_topic_name(self):
+        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))
+        self.topic_name = "edited"
+        edit_field.send_keys(self.topic_name)
+
+    @allure.step('Click save button in edit topic alert')
+    def click_topic_edit_alert_save_button(self):
+        save_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_EDIT_ALERT_SAVE_BUTTON))
+        save_button.click()
+
+    @allure.step('Check topic name in topic profile')
+    def check_profile_topic_name(self):
+        self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.TOPIC_PROFILE_NAME, self.topic_name))
+        new_topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_PROFILE_NAME))
+        assert new_topic_name.text == self.topic_name, "Edited topic did not change name"
+
+    @allure.step('Click back button in topic profile')
+    def click_topic_proile_back_button(self):
+        back_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_PROFILE_BACK_BUTTON))
+        back_button.click()
 
     @allure.step('Click topic delete button')
     def click_topic_delete_button(self):

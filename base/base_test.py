@@ -67,7 +67,7 @@ class BaseTest:
         self.topics_page.click_add_topic_button()
         self.topics_page.enter_topic_name_in_create_topic_window(topic_name)
         self.topics_page.click_ok_button_in_create_topic_window()
-        self.topics_page.topic_is_appeared_at_list(topic_name)
+        self.topics_page.topic_is_appeared_at_list()
         self.topics_page.topic_is_opened()
 
     @allure.step("Fixture: Add comment")

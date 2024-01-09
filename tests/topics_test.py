@@ -16,7 +16,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_add_topic_button()
         self.topics_page.enter_topic_name_in_create_topic_window(topic_name)
         self.topics_page.click_ok_button_in_create_topic_window()
-        self.topics_page.topic_is_appeared_at_list(topic_name)
+        self.topics_page.topic_is_appeared_at_list()
         self.topics_page.topic_is_opened()
 
     # @pytest.mark.skip
@@ -30,7 +30,7 @@ class TestTopics(BaseTest):
         self.topics_page.enter_topic_name_in_create_topic_window(self.topic_name)
         self.topics_page.add_cover_in_create_topic_window()
         self.topics_page.click_ok_button_in_create_topic_window()
-        self.topics_page.topic_is_appeared_at_list(self.topic_name)
+        self.topics_page.topic_is_appeared_at_list()
         self.topics_page.topic_has_cover(self.topic_name)
         self.topics_page.topic_is_opened()
 
@@ -68,6 +68,21 @@ class TestTopics(BaseTest):
         self.topics_page.check_topic_has_not_comments()
 
     # @pytest.mark.skip
+    @allure.title("Edit topic")
+    @allure.severity("Critical")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout", "create_topic_without_cover", "delete_created_topic")
+    def test_user_edit_topic_name(self):
+        self.topics_page.click_topic_settings_button()
+        self.topics_page.click_topic_edit_button()
+        self.topics_page.clear_edit_topic_field()
+        self.topics_page.enter_edit_topic_name()
+        self.topics_page.click_topic_edit_alert_save_button()
+        self.topics_page.check_profile_topic_name()
+        self.topics_page.topic_is_appeared_at_list()
+        self.topics_page.click_topic_proile_back_button()
+
+    # pytest.mark.skip
     @allure.title("Delete topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
