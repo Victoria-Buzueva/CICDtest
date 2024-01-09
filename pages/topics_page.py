@@ -97,6 +97,20 @@ class TopicsPage(BasePage):
         edit_ok_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.LAST_COMMENT_EDIT_OK_BUTTON))
         edit_ok_button.click()
 
+    @allure.step("Click last comment delete button")
+    def click_last_comment_delete_button(self):
+        last_comment_delete_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.LAST_COMMENT_DELETE_BUTTON))
+        last_comment_delete_button.click()
+
+    @allure.step("Click YES button in delete alert")
+    def click_comment_delete_alert_yes_button(self):
+        yes_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_DELETE_ALERT_OK_BUTTON))
+        yes_button.click()
+
+    @allure.step("Check if the topic has not comments")
+    def check_topic_has_not_comments(self):
+        self.wait.until(EC.invisibility_of_element_located(TopicsLocators.COMMENT_TEXT))
+
     @allure.step('Click topic settings button')
     def click_topic_settings_button(self):
         settings_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_SETTINGS_BUTTON))
@@ -108,7 +122,7 @@ class TopicsPage(BasePage):
         delete_button.click()
 
     @allure.step('Click topic yes button in topic delete alert')
-    def click_delete_alert_yes_button(self):
+    def click_topic_delete_alert_yes_button(self):
         yes_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.TOPIC_DELETE_ALERT_YES_BUTTON))
         yes_button.click()
 

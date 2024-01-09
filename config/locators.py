@@ -33,8 +33,10 @@ class TopicsLocators:
     # Comment locators
     COMMENT_INPUT_FIELD = ("xpath", "//textarea[@id='messageInput']")
     COMMENT_SEND_BUTTON = ("xpath", "//button[.//*[@width='40' and @height='40']]")
+    COMMENT_TEXT = ('xpath', '//div[@style="white-space: pre-wrap; word-break: break-word;"]')
     LAST_COMMENT = ("xpath", "(//div[@style='white-space: pre-wrap; word-break: break-word;'])[last()]")
     LAST_COMMENT_EDIT_BUTTON = ("xpath", "(//button[.//*[@width='12' and @height='12']])[last()]")
     LAST_COMMENT_DELETE_BUTTON = ("xpath", "(//button[.//*[@width='12' and @height='12']])[last()-1]")
     LAST_COMMENT_EDIT_OK_BUTTON = ("xpath", "//button[.//*[@width='18' and @height='18']]")
+    COMMENT_DELETE_ALERT_OK_BUTTON = ("xpath", "//button/span[text()='Yes']")
     EDIT_FIELD = ("xpath", "//textarea[@id='editableText']")

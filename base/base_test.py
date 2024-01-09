@@ -56,7 +56,7 @@ class BaseTest:
             def finalizer():
                 self.topics_page.click_topic_settings_button()
                 self.topics_page.click_topic_delete_button()
-                self.topics_page.click_delete_alert_yes_button()
+                self.topics_page.click_topic_delete_alert_yes_button()
                 self.topics_page.topic_is_disappear_from_topic_list()
             request.addfinalizer(finalizer)
 
