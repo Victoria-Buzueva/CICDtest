@@ -5,7 +5,8 @@ from config.data import Data
 from pages.login_page import LoginPage
 from pages.my_projects_page import MyProjectsPage
 from pages.topics_page import TopicsPage
-
+from selenium.webdriver import Keys
+import platform
 
 
 class BaseTest:
@@ -13,6 +14,9 @@ class BaseTest:
     login_page: LoginPage
     my_project_page: MyProjectsPage
     topics_page: TopicsPage
+
+    os_name = platform.system()
+    CMD_CTRL = Keys.COMMAND if os_name == "Darwin" else Keys.CONTROL
 
     @pytest.fixture(autouse=True)
     def setup(self, request, driver):
@@ -65,3 +69,11 @@ class BaseTest:
         self.topics_page.click_ok_button_in_create_topic_window()
         self.topics_page.topic_is_appeared_at_list(topic_name)
         self.topics_page.topic_is_opened()
+
+    @allure.step("Fixture: Add comment")
+    @pytest.fixture()
+    def add_text_comment(self):
+        self.new_comment = "comment " + str(time.time())
+        self.topics_page.enter_text_comment(self.new_comment)
+        self.topics_page.click_send_comment_button()
+        self.topics_page.last_comment_has_text()

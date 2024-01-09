@@ -4,6 +4,7 @@ import os
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import Keys
 import time
 from config.locators import TopicsLocators
 from config.locators import MenuLocators
@@ -61,13 +62,40 @@ class TopicsPage(BasePage):
         self.wait.until(EC.text_to_be_present_in_element_value(TopicsLocators.COMMENT_INPUT_FIELD, new_comment))
 
     @allure.step('Check if last comment has sended text')
-    def last_comment_has_text(self, new_comment):
-        self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.LAST_COMMENT, new_comment))
+    def last_comment_has_text(self):
+        self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.LAST_COMMENT, self.new_comment))
+        # element_text = self.wait.until(EC.presence_of_element_located(TopicsLocators.LAST_COMMENT))
+        # assert element_text.text == self.new_comment, "Last comment text does not match the expectation"
+        # print(f"/{element_text.text}/")
+        # print(f"/{self.new_comment}/")
 
     @allure.step('Click send comment button')
     def click_send_comment_button(self):
         send_comment_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.COMMENT_SEND_BUTTON))
         send_comment_button.click()
+
+    @allure.step('Click last comment edit button')
+    def click_last_comment_edit_button(self):
+        last_comment_edit_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.LAST_COMMENT_EDIT_BUTTON))
+        last_comment_edit_button.click()
+
+    @allure.step('Clear edit comment text field')
+    def clear_edit_comment_text_field(self):
+        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))
+        edit_field.send_keys(Keys.COMMAND + "A")
+        edit_field.send_keys(Keys.BACKSPACE)
+        assert edit_field.get_attribute("value") == "", "There is a text after clear edit field"
+
+    @allure.step('Enter text in edit comment')
+    def enter_edit_comment(self):
+        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))
+        self.new_comment = "edited"
+        edit_field.send_keys(self.new_comment)
+
+    @allure.step('Click edit OK button')
+    def click_edit_ok_button(self):
+        edit_ok_button = self.wait.until(EC.element_to_be_clickable(TopicsLocators.LAST_COMMENT_EDIT_OK_BUTTON))
+        edit_ok_button.click()
 
     @allure.step('Click topic settings button')
     def click_topic_settings_button(self):
@@ -89,18 +117,6 @@ class TopicsPage(BasePage):
         DELETE_TOPIC_LOCATOR = ("xpath", f"//h5[@class='TopicStyles_shortText__r+LnB' and text()='{self.topic_name}']")
         self.wait.until(EC.invisibility_of_element_located(DELETE_TOPIC_LOCATOR))
 
-
-    # @allure.step('Delete created topic in the end of test')
-    # @pytest.fixture()
-    # def delete_created_topic(self, request):
-    #     with allure.step("Logout"):
-    #         def finalizer():
-    #             self.click_topic_settings_button()
-    #             self.click_topic_delete_button()
-    #             self.click_delete_alert_yes_button()
-    #             self.topic_is_disappear_from_topic_list()
-    #         request.addfinalizer(finalizer)
-
     @allure.step("Click e-mail button in Top menu")
     def click_email_button_in_top_menu(self):
         email_button = self.wait.until(EC.element_to_be_clickable(MenuLocators.EMAIL_BUTTON))
@@ -110,26 +126,3 @@ class TopicsPage(BasePage):
     def click_logout_button_in_top_menu(self):
         logout_button = self.wait.until(EC.element_to_be_clickable(MenuLocators.LOGOUT_BUTTON))
         logout_button.click()
-
-        # @pytest.fixture
-    # def ddd(self, request):
-    #     with allure.step("Login"):
-    #         self.login_page.open()
-    #         self.login_page.is_opened()
-    #         self.login_page.enter_login(self.data.LOGIN)
-    #         self.login_page.enter_password(self.data.PASSWORD)
-    #         self.login_page.click_submit_button()
-    #         self.my_project_page.is_opened()
-    #     with allure.step("Open My project"):
-    #         self.my_project_page.open_my_projects_page()
-    #         self.my_project_page.open_my_project()
-    #         self.topics_page.is_opened()
-    #
-    #     with allure.step("Logout"):
-    #         def finalizer():
-    #
-    #             self.topics_page.click_email_button_in_top_menu()
-    #             self.topics_page.click_logout_button_in_top_menu()
-    #             self.login_page.is_opened()
-    #
-    #         request.addfinalizer(finalizer)

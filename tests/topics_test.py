@@ -43,16 +43,19 @@ class TestTopics(BaseTest):
         self.new_comment = "comment " + str(time.time())
         self.topics_page.enter_text_comment(self.new_comment)
         self.topics_page.click_send_comment_button()
-        self.topics_page.last_comment_has_text(self.new_comment)
+        self.topics_page.last_comment_has_text()
 
-    # @allure.title("Edit text comment")
-    # @allure.severity("Critical")
-    # @pytest.mark.smoke
-    # @pytest.mark.usefixtures("login_open_project_logout")
-    # def test_user_edit_text_comment(self):
-    #     self.test_user_add_text_comment()
-    #
-    #     self.topics_page.delete_created_topic()
+    @allure.title("Edit text comment")
+    @allure.severity("Critical")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("login_open_project_logout", "create_topic_without_cover", "add_text_comment", "delete_created_topic")
+    def test_user_edit_text_comment(self):
+        self.topics_page.click_last_comment_edit_button()
+        self.topics_page.clear_edit_comment_text_field()
+        self.topics_page.enter_edit_comment()
+        self.topics_page.click_edit_ok_button()
+        self.topics_page.last_comment_has_text()
+
 
     # @pytest.mark.skip
     @allure.title("Delete topic")
@@ -60,7 +63,6 @@ class TestTopics(BaseTest):
     @pytest.mark.smoke
     @pytest.mark.usefixtures("login_open_project_logout", "create_topic_without_cover")
     def test_user_delete_topic(self):
-        self.test_user_create_topic_without_cover()
         self.topics_page.click_topic_settings_button()
         self.topics_page.click_topic_delete_button()
         self.topics_page.click_delete_alert_yes_button()
