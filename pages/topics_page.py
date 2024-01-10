@@ -238,3 +238,40 @@ class TopicsPage(BasePage):
             self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.TOPIC_NAME_IN_NAVBAR, random_element.text))
             topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_NAME_IN_NAVBAR))
             assert topic_name.text == random_element.text, "The name of the open topic does not match the text you edited topic"
+
+    @allure.step("Open random comment from search")
+    def open_random_comment_from_search(self):
+        # We get a list of the search queries in the comments
+        list_search_result = self.wait.until(EC.visibility_of_any_elements_located(TopicsLocators.TOPIC_SEARCH_COMMENT_RESULT_BOLD))
+        if len(list_search_result) > 0:
+            # If something is found, click on a random element
+            random_element = random.choice(list_search_result)
+            random_element.click()
+            text_of_random_element = random_element.text
+            # Find the name of the topic in the comment that we clicked on
+            clicked_topic_name = self.driver.execute_script(
+                "var node = arguments[0];"
+                "while (node) {"
+                "    if (node.tagName === 'DIV' && node.querySelector('h5')) {"
+                "        return node.querySelector('h5');"
+                "    }"
+                "    node = node.parentNode;"
+                "}"
+                "return null;",
+                random_element
+            )
+            # We check that the name of the theme in the navbar corresponds to the clicked element
+            self.wait.until(EC.text_to_be_present_in_element(TopicsLocators.TOPIC_NAME_IN_NAVBAR, clicked_topic_name.text))
+            topic_name = self.wait.until(EC.presence_of_element_located(TopicsLocators.TOPIC_NAME_IN_NAVBAR))
+            assert topic_name.text == clicked_topic_name.text, "The name of the open topic does not match clicked comment topic ame"
+            # Creating a list of comment texts from an open topic
+            list_of_comments = self.wait.until(EC.presence_of_all_elements_located(TopicsLocators.COMMENT_TEXT))
+            # Looking for a comment that has the desired word in the text. Return the first one found.
+            for comment in list_of_comments:
+                comment_text = comment.text.strip()  # getting text from an element
+                if text_of_random_element in comment_text:  # checking for the presence of the "demo"
+                    founded_comment = comment_text
+                    break
+                else:
+                    founded_comment = ""
+        assert text_of_random_element in founded_comment, "The name of the open topic does not match the text you edited topic"
