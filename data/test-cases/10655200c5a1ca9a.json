@@ -1,24 +1,24 @@
 {
-  "uid" : "cf4d42e6d3762c1f",
+  "uid" : "10655200c5a1ca9a",
   "name" : "Edit topic",
   "fullName" : "tests.topics_test.TestTopics#test_user_edit_topic_name",
   "historyId" : "dee8eb954ab0195b87a0fec1896aa50d",
   "time" : {
-    "start" : 1704911386155,
-    "stop" : 1704911386514,
-    "duration" : 359
+    "start" : 1704911775220,
+    "stop" : 1704911775528,
+    "duration" : 308
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: There is a text after clear edit topic field",
-  "statusTrace" : "self = <topics_test.TestTopics object at 0x7f68b70bdeb0>\n\n    @allure.title(\"Edit topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"delete_created_topic\")\n    def test_user_edit_topic_name(self):\n        self.topics_page.click_topic_settings_button()\n        self.topics_page.click_topic_edit_button()\n>       self.topics_page.clear_edit_topic_field()\n\ntests/topics_test.py:78: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f68b70c3b60>\n\n    @allure.step('Clear edit topic field')\n    def clear_edit_topic_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit topic field\"\nE       AssertionError: There is a text after clear edit topic field\n\npages/topics_page.py:130: AssertionError",
+  "statusTrace" : "self = <topics_test.TestTopics object at 0x7f58f6867080>\n\n    @allure.title(\"Edit topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"delete_created_topic\")\n    def test_user_edit_topic_name(self):\n        self.topics_page.click_topic_settings_button()\n        self.topics_page.click_topic_edit_button()\n>       self.topics_page.clear_edit_topic_field()\n\ntests/topics_test.py:78: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f58f76577d0>\n\n    @allure.step('Clear edit topic field')\n    def clear_edit_topic_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit topic field\"\nE       AssertionError: There is a text after clear edit topic field\n\npages/topics_page.py:130: AssertionError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "delete_created_topic",
     "time" : {
-      "start" : 1704911386155,
-      "stop" : 1704911386155,
-      "duration" : 0
+      "start" : 1704911775219,
+      "stop" : 1704911775220,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -26,30 +26,138 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1704911767314,
+      "stop" : 1704911768127,
+      "duration" : 813
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "create_topic_without_cover",
+    "time" : {
+      "start" : 1704911772868,
+      "stop" : 1704911775219,
+      "duration" : 2351
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click add topic button",
+      "time" : {
+        "start" : 1704911772869,
+        "stop" : 1704911772949,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter new topic name",
+      "time" : {
+        "start" : 1704911772949,
+        "stop" : 1704911774116,
+        "duration" : 1167
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704911772.8684626'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click OK button on topic create window",
+      "time" : {
+        "start" : 1704911774116,
+        "stop" : 1704911774163,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the created topic appear at the list",
+      "time" : {
+        "start" : 1704911774163,
+        "stop" : 1704911775203,
+        "duration" : 1040
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the created topic is opened",
+      "time" : {
+        "start" : 1704911775203,
+        "stop" : 1704911775219,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
   }, {
     "name" : "login_open_project_logout",
     "time" : {
-      "start" : 1704911379111,
-      "stop" : 1704911384731,
-      "duration" : 5620
+      "start" : 1704911768127,
+      "stop" : 1704911772868,
+      "duration" : 4741
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Login",
       "time" : {
-        "start" : 1704911379111,
-        "stop" : 1704911382326,
-        "duration" : 3215
+        "start" : 1704911768127,
+        "stop" : 1704911771170,
+        "duration" : 3043
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Open https://space.a-mates.com/login page",
         "time" : {
-          "start" : 1704911379111,
-          "stop" : 1704911381036,
-          "duration" : 1925
+          "start" : 1704911768127,
+          "stop" : 1704911769892,
+          "duration" : 1765
         },
         "status" : "passed",
         "steps" : [ ],
@@ -57,13 +165,13 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/login is opened",
         "time" : {
-          "start" : 1704911381036,
-          "stop" : 1704911381039,
+          "start" : 1704911769892,
+          "stop" : 1704911769895,
           "duration" : 3
         },
         "status" : "passed",
@@ -72,14 +180,14 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       }, {
         "name" : "Enter login",
         "time" : {
-          "start" : 1704911381039,
-          "stop" : 1704911381167,
-          "duration" : 128
+          "start" : 1704911769895,
+          "stop" : 1704911770018,
+          "duration" : 123
         },
         "status" : "passed",
         "steps" : [ ],
@@ -90,14 +198,14 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Enter password",
         "time" : {
-          "start" : 1704911381167,
-          "stop" : 1704911381249,
-          "duration" : 82
+          "start" : 1704911770019,
+          "stop" : 1704911770099,
+          "duration" : 80
         },
         "status" : "passed",
         "steps" : [ ],
@@ -108,14 +216,14 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Click submit button",
         "time" : {
-          "start" : 1704911381249,
-          "stop" : 1704911381317,
-          "duration" : 68
+          "start" : 1704911770099,
+          "stop" : 1704911770157,
+          "duration" : 58
         },
         "status" : "passed",
         "steps" : [ ],
@@ -123,14 +231,14 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/projects is opened",
         "time" : {
-          "start" : 1704911381317,
-          "stop" : 1704911382326,
-          "duration" : 1009
+          "start" : 1704911770157,
+          "stop" : 1704911771170,
+          "duration" : 1013
         },
         "status" : "passed",
         "steps" : [ ],
@@ -138,29 +246,29 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 6
+      "stepsCount" : 6,
+      "hasContent" : true
     }, {
       "name" : "Open My project",
       "time" : {
-        "start" : 1704911382326,
-        "stop" : 1704911384730,
-        "duration" : 2404
+        "start" : 1704911771170,
+        "stop" : 1704911772868,
+        "duration" : 1698
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Click on 'My projects' button in top menu",
         "time" : {
-          "start" : 1704911382326,
-          "stop" : 1704911382376,
-          "duration" : 50
+          "start" : 1704911771170,
+          "stop" : 1704911771217,
+          "duration" : 47
         },
         "status" : "passed",
         "steps" : [ ],
@@ -168,14 +276,14 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       }, {
         "name" : "Click on 'NAME_OF_MY_PROJECT' button",
         "time" : {
-          "start" : 1704911382376,
-          "stop" : 1704911382722,
-          "duration" : 346
+          "start" : 1704911771217,
+          "stop" : 1704911771863,
+          "duration" : 646
         },
         "status" : "passed",
         "steps" : [ ],
@@ -183,14 +291,14 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/topics is opened",
         "time" : {
-          "start" : 1704911382722,
-          "stop" : 1704911384730,
-          "duration" : 2008
+          "start" : 1704911771863,
+          "stop" : 1704911772868,
+          "duration" : 1005
         },
         "status" : "passed",
         "steps" : [ ],
@@ -198,20 +306,20 @@
         "parameters" : [ ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 3
+      "stepsCount" : 3,
+      "hasContent" : true
     }, {
       "name" : "Logout",
       "time" : {
-        "start" : 1704911384731,
-        "stop" : 1704911384731,
+        "start" : 1704911772868,
+        "stop" : 1704911772868,
         "duration" : 0
       },
       "status" : "passed",
@@ -220,128 +328,20 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 12
-  }, {
-    "name" : "create_topic_without_cover",
-    "time" : {
-      "start" : 1704911384731,
-      "stop" : 1704911386155,
-      "duration" : 1424
-    },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "Click add topic button",
-      "time" : {
-        "start" : 1704911384731,
-        "stop" : 1704911384818,
-        "duration" : 87
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Enter new topic name",
-      "time" : {
-        "start" : 1704911384818,
-        "stop" : 1704911384994,
-        "duration" : 176
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "topic_name",
-        "value" : "'demo 1704911384.7306888'"
-      } ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
-    }, {
-      "name" : "Click OK button on topic create window",
-      "time" : {
-        "start" : 1704911384994,
-        "stop" : 1704911385116,
-        "duration" : 122
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Check if the created topic appear at the list",
-      "time" : {
-        "start" : 1704911385116,
-        "stop" : 1704911386138,
-        "duration" : 1022
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Check if the created topic is opened",
-      "time" : {
-        "start" : 1704911386138,
-        "stop" : 1704911386155,
-        "duration" : 17
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 5
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1704911378293,
-      "stop" : 1704911379111,
-      "duration" : 818
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 12,
+    "hasContent" : true
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1704911379111,
-      "stop" : 1704911379111,
+      "start" : 1704911768127,
+      "stop" : 1704911768127,
       "duration" : 0
     },
     "status" : "passed",
@@ -350,19 +350,19 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "AssertionError: There is a text after clear edit topic field",
-    "statusTrace" : "self = <topics_test.TestTopics object at 0x7f68b70bdeb0>\n\n    @allure.title(\"Edit topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"delete_created_topic\")\n    def test_user_edit_topic_name(self):\n        self.topics_page.click_topic_settings_button()\n        self.topics_page.click_topic_edit_button()\n>       self.topics_page.clear_edit_topic_field()\n\ntests/topics_test.py:78: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f68b70c3b60>\n\n    @allure.step('Clear edit topic field')\n    def clear_edit_topic_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit topic field\"\nE       AssertionError: There is a text after clear edit topic field\n\npages/topics_page.py:130: AssertionError",
+    "statusTrace" : "self = <topics_test.TestTopics object at 0x7f58f6867080>\n\n    @allure.title(\"Edit topic\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"delete_created_topic\")\n    def test_user_edit_topic_name(self):\n        self.topics_page.click_topic_settings_button()\n        self.topics_page.click_topic_edit_button()\n>       self.topics_page.clear_edit_topic_field()\n\ntests/topics_test.py:78: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f58f76577d0>\n\n    @allure.step('Clear edit topic field')\n    def clear_edit_topic_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_TOPIC_NAME_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit topic field\"\nE       AssertionError: There is a text after clear edit topic field\n\npages/topics_page.py:130: AssertionError",
     "steps" : [ {
       "name" : "Click topic settings button",
       "time" : {
-        "start" : 1704911386156,
-        "stop" : 1704911386332,
-        "duration" : 176
+        "start" : 1704911775220,
+        "stop" : 1704911775354,
+        "duration" : 134
       },
       "status" : "passed",
       "steps" : [ ],
@@ -370,14 +370,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Click topic edit button",
       "time" : {
-        "start" : 1704911386333,
-        "stop" : 1704911386423,
-        "duration" : 90
+        "start" : 1704911775354,
+        "stop" : 1704911775441,
+        "duration" : 87
       },
       "status" : "passed",
       "steps" : [ ],
@@ -385,14 +385,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Clear edit topic field",
       "time" : {
-        "start" : 1704911386423,
-        "stop" : 1704911386514,
-        "duration" : 91
+        "start" : 1704911775441,
+        "stop" : 1704911775528,
+        "duration" : 87
       },
       "status" : "failed",
       "statusMessage" : "AssertionError: There is a text after clear edit topic field\n",
@@ -402,22 +402,22 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
-    "hasContent" : true,
-    "stepsCount" : 3
+    "stepsCount" : 3,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "delete_created_topic::finalizer",
     "time" : {
-      "start" : 1704911386525,
-      "stop" : 1704911387606,
-      "duration" : 1081
+      "start" : 1704911775537,
+      "stop" : 1704911776636,
+      "duration" : 1099
     },
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between\" style=\"overflow: hidden;\">...</div> is not clickable at point (1228, 96). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -425,9 +425,9 @@
     "steps" : [ {
       "name" : "Click topic settings button",
       "time" : {
-        "start" : 1704911386525,
-        "stop" : 1704911387605,
-        "duration" : 1080
+        "start" : 1704911775537,
+        "stop" : 1704911776635,
+        "duration" : 1098
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between\" style=\"overflow: hidden;\">...</div> is not clickable at point (1228, 96). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -437,21 +437,36 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 1
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1704911777730,
+      "stop" : 1704911777789,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "login_open_project_logout::finalizer",
     "time" : {
-      "start" : 1704911387607,
-      "stop" : 1704911388654,
-      "duration" : 1047
+      "start" : 1704911776637,
+      "stop" : 1704911777729,
+      "duration" : 1092
     },
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1766, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -459,9 +474,9 @@
     "steps" : [ {
       "name" : "Click e-mail button in Top menu",
       "time" : {
-        "start" : 1704911387607,
-        "stop" : 1704911388653,
-        "duration" : 1046
+        "start" : 1704911776637,
+        "stop" : 1704911777729,
+        "duration" : 1092
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class=\"MuiGrid-root jss41 MuiGrid-container MuiGrid-align-items-xs-center\" aria-controls=\"myprofile-menu\">...</div> is not clickable at point (1766, 32). Other element would receive the click: <div class=\"MuiDialog-container MuiDialog-scrollPaper\" role=\"none presentation\" tabindex=\"-1\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">...</div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
@@ -471,30 +486,15 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 1
-  }, {
-    "name" : "driver::0",
-    "time" : {
-      "start" : 1704911388655,
-      "stop" : 1704911388713,
-      "duration" : 58
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 1,
+    "hasContent" : true
   } ],
   "labels" : [ {
     "name" : "severity",
@@ -519,7 +519,7 @@
     "value" : "TestTopics"
   }, {
     "name" : "host",
-    "value" : "3aceb9029095"
+    "value" : "6395a219e75c"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -550,14 +550,23 @@
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 3,
+        "failed" : 4,
         "broken" : 0,
         "skipped" : 0,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "cf4d42e6d3762c1f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: There is a text after clear edit topic field",
+        "time" : {
+          "start" : 1704911386155,
+          "stop" : 1704911386514,
+          "duration" : 359
+        }
+      }, {
         "uid" : "7bd64bd8378830e7",
         "status" : "failed",
         "statusDetails" : "AssertionError: There is a text after clear edit topic field",
@@ -579,6 +588,6 @@
     },
     "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout', 'create_topic_without_cover', 'delete_created_topic')", "smoke" ]
   },
-  "source" : "cf4d42e6d3762c1f.json",
+  "source" : "10655200c5a1ca9a.json",
   "parameterValues" : [ ]
 }

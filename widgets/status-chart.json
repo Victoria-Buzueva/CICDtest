@@ -1,121 +1,121 @@
 [ {
-  "uid" : "cf4d42e6d3762c1f",
-  "name" : "Edit topic",
-  "time" : {
-    "start" : 1704911386155,
-    "stop" : 1704911386514,
-    "duration" : 359
-  },
-  "status" : "failed",
-  "severity" : "critical"
-}, {
-  "uid" : "c30c897273fa8139",
-  "name" : "Delete topic",
-  "time" : {
-    "start" : 1704911396564,
-    "stop" : 1704911398906,
-    "duration" : 2342
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "3cc9e6d32cd38152",
-  "name" : "Successful topic search",
-  "time" : {
-    "start" : 1704911404642,
-    "stop" : 1704911405975,
-    "duration" : 1333
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7290fb5b26a1872",
-  "name" : "Delete single comment in the topic",
-  "time" : {
-    "start" : 1704911373580,
-    "stop" : 1704911375726,
-    "duration" : 2146
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "3cab50dc3a2474b9",
-  "name" : "Add text comment",
-  "time" : {
-    "start" : 1704911350023,
-    "stop" : 1704911351259,
-    "duration" : 1236
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "adc39a134e0954e9",
-  "name" : "Search with empty results",
-  "time" : {
-    "start" : 1704911419959,
-    "stop" : 1704911421559,
-    "duration" : 1600
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "986f962bb52f52d2",
+  "uid" : "8baa92fe1d82b409",
   "name" : "Successful comment search",
   "time" : {
-    "start" : 1704911412899,
-    "stop" : 1704911414289,
-    "duration" : 1390
+    "start" : 1704911801020,
+    "stop" : 1704911803459,
+    "duration" : 2439
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "90744399903abda7",
+  "uid" : "a7db1fcd6573f45f",
+  "name" : "Delete topic",
+  "time" : {
+    "start" : 1704911785321,
+    "stop" : 1704911786621,
+    "duration" : 1300
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c4a6e9282780f8e5",
+  "name" : "Delete single comment in the topic",
+  "time" : {
+    "start" : 1704911761637,
+    "stop" : 1704911763778,
+    "duration" : 2141
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a3832c952e9b9ebe",
+  "name" : "Open comment from search",
+  "time" : {
+    "start" : 1704911827570,
+    "stop" : 1704911831259,
+    "duration" : 3689
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70c3883027026a22",
+  "name" : "Successful topic search",
+  "time" : {
+    "start" : 1704911794086,
+    "stop" : 1704911795475,
+    "duration" : 1389
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4531141adaafdae2",
+  "name" : "Create topic with cover",
+  "time" : {
+    "start" : 1704911717622,
+    "stop" : 1704911720249,
+    "duration" : 2627
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8a8a9a22cbc8dd4",
   "name" : "Create topic without cover",
   "time" : {
-    "start" : 1704911309151,
-    "stop" : 1704911319514,
-    "duration" : 10363
+    "start" : 1704911690470,
+    "stop" : 1704911700836,
+    "duration" : 10366
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "f269d8abf9aaac30",
-  "name" : "Open comment from search",
+  "uid" : "990c676cf8573eff",
+  "name" : "Add text comment",
   "time" : {
-    "start" : 1704911435892,
-    "stop" : 1704911438575,
-    "duration" : 2683
+    "start" : 1704911732325,
+    "stop" : 1704911733541,
+    "duration" : 1216
   },
   "status" : "passed",
-  "severity" : "normal"
+  "severity" : "critical"
 }, {
-  "uid" : "db287734ceadea76",
+  "uid" : "c4ff9c2a6bdc5870",
   "name" : "Open topic from search",
   "time" : {
-    "start" : 1704911427408,
-    "stop" : 1704911430128,
-    "duration" : 2720
+    "start" : 1704911818213,
+    "stop" : 1704911821002,
+    "duration" : 2789
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e0c8566e63cac1f9",
+  "uid" : "f1f1f6e70a96149e",
   "name" : "Edit text comment",
   "time" : {
-    "start" : 1704911362892,
-    "stop" : 1704911363019,
-    "duration" : 127
+    "start" : 1704911736069,
+    "stop" : 1704911736069,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "8cd8f65ddfd1f7a5",
+  "name" : "Search with empty results",
+  "time" : {
+    "start" : 1704911809983,
+    "stop" : 1704911812764,
+    "duration" : 2781
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10655200c5a1ca9a",
+  "name" : "Edit topic",
+  "time" : {
+    "start" : 1704911775220,
+    "stop" : 1704911775528,
+    "duration" : 308
   },
   "status" : "failed",
   "severity" : "critical"
-}, {
-  "uid" : "2ded3152ac6b6e13",
-  "name" : "Create topic with cover",
-  "time" : {
-    "start" : 1704911337279,
-    "stop" : 1704911340680,
-    "duration" : 3401
-  },
-  "status" : "passed",
-  "severity" : "normal"
 } ]

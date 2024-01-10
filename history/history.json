@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "c4ff9c2a6bdc5870",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911818213,
+        "stop" : 1704911821002,
+        "duration" : 2789
+      }
+    }, {
       "uid" : "db287734ceadea76",
       "status" : "passed",
       "time" : {
@@ -39,11 +47,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "c4a6e9282780f8e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911761637,
+        "stop" : 1704911763778,
+        "duration" : 2141
+      }
+    }, {
       "uid" : "e7290fb5b26a1872",
       "status" : "passed",
       "time" : {
@@ -74,11 +90,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "a3832c952e9b9ebe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911827570,
+        "stop" : 1704911831259,
+        "duration" : 3689
+      }
+    }, {
       "uid" : "f269d8abf9aaac30",
       "status" : "passed",
       "time" : {
@@ -106,14 +130,23 @@
   },
   "dee8eb954ab0195b87a0fec1896aa50d" : {
     "statistic" : {
-      "failed" : 3,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "10655200c5a1ca9a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: There is a text after clear edit topic field",
+      "time" : {
+        "start" : 1704911775220,
+        "stop" : 1704911775528,
+        "duration" : 308
+      }
+    }, {
       "uid" : "cf4d42e6d3762c1f",
       "status" : "failed",
       "statusDetails" : "AssertionError: There is a text after clear edit topic field",
@@ -147,11 +180,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "8cd8f65ddfd1f7a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911809983,
+        "stop" : 1704911812764,
+        "duration" : 2781
+      }
+    }, {
       "uid" : "adc39a134e0954e9",
       "status" : "passed",
       "time" : {
@@ -182,11 +223,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "70c3883027026a22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911794086,
+        "stop" : 1704911795475,
+        "duration" : 1389
+      }
+    }, {
       "uid" : "3cc9e6d32cd38152",
       "status" : "passed",
       "time" : {
@@ -215,13 +264,22 @@
   "e7a0b83632f2d094241f2ac4c4143b20" : {
     "statistic" : {
       "failed" : 2,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "f1f1f6e70a96149e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704911736069,
+        "stop" : 1704911736069,
+        "duration" : 0
+      }
+    }, {
       "uid" : "e0c8566e63cac1f9",
       "status" : "failed",
       "statusDetails" : "AssertionError: There is a text after clear edit comment field",
@@ -255,11 +313,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "8baa92fe1d82b409",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911801020,
+        "stop" : 1704911803459,
+        "duration" : 2439
+      }
+    }, {
       "uid" : "986f962bb52f52d2",
       "status" : "passed",
       "time" : {
@@ -290,11 +356,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "990c676cf8573eff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911732325,
+        "stop" : 1704911733541,
+        "duration" : 1216
+      }
+    }, {
       "uid" : "3cab50dc3a2474b9",
       "status" : "passed",
       "time" : {
@@ -433,13 +507,22 @@
   "6aa7b2dcc614092fb838c8626a31c199" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 6,
+      "broken" : 7,
       "skipped" : 0,
       "passed" : 10,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "e8a8a9a22cbc8dd4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704911690470,
+        "stop" : 1704911700836,
+        "duration" : 10366
+      }
+    }, {
       "uid" : "90744399903abda7",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -580,11 +663,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "4531141adaafdae2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911717622,
+        "stop" : 1704911720249,
+        "duration" : 2627
+      }
+    }, {
       "uid" : "2ded3152ac6b6e13",
       "status" : "passed",
       "time" : {
@@ -725,11 +816,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "a7db1fcd6573f45f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704911785321,
+        "stop" : 1704911786621,
+        "duration" : 1300
+      }
+    }, {
       "uid" : "c30c897273fa8139",
       "status" : "passed",
       "time" : {

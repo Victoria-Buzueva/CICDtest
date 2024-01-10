@@ -4,8 +4,8 @@
     "uid" : "51ace65bd5b66eea371126222a0dd528",
     "name" : "Topics",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 9,
       "unknown" : 0,

@@ -6,13 +6,26 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "Create topic without cover",
-        "uid" : "90744399903abda7",
+        "uid" : "e8a8a9a22cbc8dd4",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704911309151,
-          "stop" : 1704911319514,
-          "duration" : 10363
+          "start" : 1704911690470,
+          "stop" : 1704911700836,
+          "duration" : 10366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Edit text comment",
+        "uid" : "f1f1f6e70a96149e",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704911736069,
+          "stop" : 1704911736069,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,33 +37,16 @@
   }, {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: There is a text after clear edit comment field",
-      "children" : [ {
-        "name" : "Edit text comment",
-        "uid" : "e0c8566e63cac1f9",
-        "parentUid" : "6e0c4212f633c64eaae9e7aa4070e9f3",
-        "status" : "failed",
-        "time" : {
-          "start" : 1704911362892,
-          "stop" : 1704911363019,
-          "duration" : 127
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "6e0c4212f633c64eaae9e7aa4070e9f3"
-    }, {
       "name" : "AssertionError: There is a text after clear edit topic field",
       "children" : [ {
         "name" : "Edit topic",
-        "uid" : "cf4d42e6d3762c1f",
+        "uid" : "10655200c5a1ca9a",
         "parentUid" : "8a23fe46528bd9570423f683e1c45df3",
         "status" : "failed",
         "time" : {
-          "start" : 1704911386155,
-          "stop" : 1704911386514,
-          "duration" : 359
+          "start" : 1704911775220,
+          "stop" : 1704911775528,
+          "duration" : 308
         },
         "flaky" : false,
         "newFailed" : false,
