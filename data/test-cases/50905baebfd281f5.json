@@ -1,12 +1,12 @@
 {
-  "uid" : "ba167710150382ac",
+  "uid" : "50905baebfd281f5",
   "name" : "Search with empty results",
   "fullName" : "tests.topics_test.TestTopics#test_user_search_with_empty_resuls",
   "historyId" : "ffa06ddd1fb050797ff5082119fc13e7",
   "time" : {
-    "start" : 1704909931913,
-    "stop" : 1704909934487,
-    "duration" : 2574
+    "start" : 1704911010786,
+    "stop" : 1704911013476,
+    "duration" : 2690
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,25 +14,25 @@
   "beforeStages" : [ {
     "name" : "login_open_project_logout",
     "time" : {
-      "start" : 1704909927770,
-      "stop" : 1704909931913,
-      "duration" : 4143
+      "start" : 1704911003479,
+      "stop" : 1704911010785,
+      "duration" : 7306
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Login",
       "time" : {
-        "start" : 1704909927770,
-        "stop" : 1704909930470,
-        "duration" : 2700
+        "start" : 1704911003479,
+        "stop" : 1704911008128,
+        "duration" : 4649
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Open https://space.a-mates.com/login page",
         "time" : {
-          "start" : 1704909927770,
-          "stop" : 1704909929188,
-          "duration" : 1418
+          "start" : 1704911003479,
+          "stop" : 1704911005834,
+          "duration" : 2355
         },
         "status" : "passed",
         "steps" : [ ],
@@ -45,8 +45,8 @@
       }, {
         "name" : "Page https://space.a-mates.com/login is opened",
         "time" : {
-          "start" : 1704909929188,
-          "stop" : 1704909929191,
+          "start" : 1704911005834,
+          "stop" : 1704911005837,
           "duration" : 3
         },
         "status" : "passed",
@@ -60,9 +60,9 @@
       }, {
         "name" : "Enter login",
         "time" : {
-          "start" : 1704909929191,
-          "stop" : 1704909929319,
-          "duration" : 128
+          "start" : 1704911005837,
+          "stop" : 1704911005966,
+          "duration" : 129
         },
         "status" : "passed",
         "steps" : [ ],
@@ -78,9 +78,9 @@
       }, {
         "name" : "Enter password",
         "time" : {
-          "start" : 1704909929319,
-          "stop" : 1704909929400,
-          "duration" : 81
+          "start" : 1704911005966,
+          "stop" : 1704911006050,
+          "duration" : 84
         },
         "status" : "passed",
         "steps" : [ ],
@@ -96,9 +96,9 @@
       }, {
         "name" : "Click submit button",
         "time" : {
-          "start" : 1704909929400,
-          "stop" : 1704909929456,
-          "duration" : 56
+          "start" : 1704911006050,
+          "stop" : 1704911006111,
+          "duration" : 61
         },
         "status" : "passed",
         "steps" : [ ],
@@ -111,9 +111,9 @@
       }, {
         "name" : "Page https://space.a-mates.com/projects is opened",
         "time" : {
-          "start" : 1704909929456,
-          "stop" : 1704909930470,
-          "duration" : 1014
+          "start" : 1704911006111,
+          "stop" : 1704911008127,
+          "duration" : 2016
         },
         "status" : "passed",
         "steps" : [ ],
@@ -133,17 +133,17 @@
     }, {
       "name" : "Open My project",
       "time" : {
-        "start" : 1704909930471,
-        "stop" : 1704909931913,
-        "duration" : 1442
+        "start" : 1704911008128,
+        "stop" : 1704911010785,
+        "duration" : 2657
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Click on 'My projects' button in top menu",
         "time" : {
-          "start" : 1704909930471,
-          "stop" : 1704909930517,
-          "duration" : 46
+          "start" : 1704911008128,
+          "stop" : 1704911008183,
+          "duration" : 55
         },
         "status" : "passed",
         "steps" : [ ],
@@ -156,9 +156,9 @@
       }, {
         "name" : "Click on 'NAME_OF_MY_PROJECT' button",
         "time" : {
-          "start" : 1704909930518,
-          "stop" : 1704909930908,
-          "duration" : 390
+          "start" : 1704911008183,
+          "stop" : 1704911008591,
+          "duration" : 408
         },
         "status" : "passed",
         "steps" : [ ],
@@ -171,9 +171,9 @@
       }, {
         "name" : "Page https://space.a-mates.com/topics is opened",
         "time" : {
-          "start" : 1704909930908,
-          "stop" : 1704909931913,
-          "duration" : 1005
+          "start" : 1704911008591,
+          "stop" : 1704911010785,
+          "duration" : 2194
         },
         "status" : "passed",
         "steps" : [ ],
@@ -193,8 +193,8 @@
     }, {
       "name" : "Logout",
       "time" : {
-        "start" : 1704909931913,
-        "stop" : 1704909931913,
+        "start" : 1704911010785,
+        "stop" : 1704911010785,
         "duration" : 0
       },
       "status" : "passed",
@@ -213,11 +213,11 @@
     "stepsCount" : 12,
     "hasContent" : true
   }, {
-    "name" : "setup",
+    "name" : "driver",
     "time" : {
-      "start" : 1704909927770,
-      "stop" : 1704909927770,
-      "duration" : 0
+      "start" : 1704911002653,
+      "stop" : 1704911003478,
+      "duration" : 825
     },
     "status" : "passed",
     "steps" : [ ],
@@ -228,11 +228,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "driver",
+    "name" : "setup",
     "time" : {
-      "start" : 1704909926956,
-      "stop" : 1704909927769,
-      "duration" : 813
+      "start" : 1704911003478,
+      "stop" : 1704911003479,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -248,9 +248,9 @@
     "steps" : [ {
       "name" : "Click search topic button",
       "time" : {
-        "start" : 1704909931913,
-        "stop" : 1704909931988,
-        "duration" : 75
+        "start" : 1704911010786,
+        "stop" : 1704911010906,
+        "duration" : 120
       },
       "status" : "passed",
       "steps" : [ ],
@@ -263,9 +263,9 @@
     }, {
       "name" : "Enter empty search",
       "time" : {
-        "start" : 1704909931988,
-        "stop" : 1704909932433,
-        "duration" : 445
+        "start" : 1704911010906,
+        "stop" : 1704911011424,
+        "duration" : 518
       },
       "status" : "passed",
       "steps" : [ ],
@@ -278,9 +278,9 @@
     }, {
       "name" : "Check topic search has empty results",
       "time" : {
-        "start" : 1704909932433,
-        "stop" : 1704909934487,
-        "duration" : 2054
+        "start" : 1704911011424,
+        "stop" : 1704911013475,
+        "duration" : 2051
       },
       "status" : "passed",
       "steps" : [ ],
@@ -301,17 +301,17 @@
   "afterStages" : [ {
     "name" : "login_open_project_logout::finalizer",
     "time" : {
-      "start" : 1704909934487,
-      "stop" : 1704909935631,
-      "duration" : 1144
+      "start" : 1704911013476,
+      "stop" : 1704911013611,
+      "duration" : 135
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Click e-mail button in Top menu",
       "time" : {
-        "start" : 1704909934487,
-        "stop" : 1704909934535,
-        "duration" : 48
+        "start" : 1704911013476,
+        "stop" : 1704911013527,
+        "duration" : 51
       },
       "status" : "passed",
       "steps" : [ ],
@@ -324,9 +324,9 @@
     }, {
       "name" : "Click logout button in Top menu",
       "time" : {
-        "start" : 1704909934536,
-        "stop" : 1704909935594,
-        "duration" : 1058
+        "start" : 1704911013527,
+        "stop" : 1704911013605,
+        "duration" : 78
       },
       "status" : "passed",
       "steps" : [ ],
@@ -339,9 +339,9 @@
     }, {
       "name" : "Page https://space.a-mates.com/login is opened",
       "time" : {
-        "start" : 1704909935594,
-        "stop" : 1704909935631,
-        "duration" : 37
+        "start" : 1704911013605,
+        "stop" : 1704911013611,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -361,8 +361,8 @@
   }, {
     "name" : "driver::0",
     "time" : {
-      "start" : 1704909935632,
-      "stop" : 1704909935691,
+      "start" : 1704911013613,
+      "stop" : 1704911013672,
       "duration" : 59
     },
     "status" : "passed",
@@ -397,7 +397,7 @@
     "value" : "TestTopics"
   }, {
     "name" : "host",
-    "value" : "9ce04de2eb52"
+    "value" : "76f2892dd3b7"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -422,8 +422,27 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ba167710150382ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704909931913,
+          "stop" : 1704909934487,
+          "duration" : 2574
+        }
+      } ]
+    },
     "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout')", "smoke" ]
   },
-  "source" : "ba167710150382ac.json",
+  "source" : "50905baebfd281f5.json",
   "parameterValues" : [ ]
 }

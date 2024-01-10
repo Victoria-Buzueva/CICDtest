@@ -1,78 +1,35 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "name" : "AssertionError: There is a text after clear edit comment field",
       "children" : [ {
-        "name" : "Create topic without cover",
-        "uid" : "a466ccf3111cfb3a",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704909815625,
-          "stop" : 1704909826003,
-          "duration" : 10378
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add text comment",
-        "uid" : "88a9e6d0790eaa27",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704909839187,
-          "stop" : 1704909839187,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Edit text comment",
-        "uid" : "d3d30e18530c2f63",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
+        "uid" : "400bd291b0d09dc9",
+        "parentUid" : "6e0c4212f633c64eaae9e7aa4070e9f3",
+        "status" : "failed",
         "time" : {
-          "start" : 1704909855725,
-          "stop" : 1704909855725,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Delete topic",
-        "uid" : "dc8a38e7d2886e76",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704909895882,
-          "stop" : 1704909895882,
-          "duration" : 0
+          "start" : 1704910937288,
+          "stop" : 1704910937421,
+          "duration" : 133
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
+      "uid" : "6e0c4212f633c64eaae9e7aa4070e9f3"
+    }, {
       "name" : "AssertionError: There is a text after clear edit topic field",
       "children" : [ {
         "name" : "Edit topic",
-        "uid" : "dafd722678e995f4",
+        "uid" : "7bd64bd8378830e7",
         "parentUid" : "8a23fe46528bd9570423f683e1c45df3",
         "status" : "failed",
         "time" : {
-          "start" : 1704909893291,
-          "stop" : 1704909893641,
-          "duration" : 350
+          "start" : 1704910964760,
+          "stop" : 1704910966104,
+          "duration" : 1344
         },
         "flaky" : false,
         "newFailed" : false,
