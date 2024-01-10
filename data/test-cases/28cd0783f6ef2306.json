@@ -1,0 +1,717 @@
+{
+  "uid" : "28cd0783f6ef2306",
+  "name" : "Edit text comment",
+  "fullName" : "tests.topics_test.TestTopics#test_user_edit_text_comment",
+  "historyId" : "e7a0b83632f2d094241f2ac4c4143b20",
+  "time" : {
+    "start" : 1704912709147,
+    "stop" : 1704912709274,
+    "duration" : 127
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: There is a text after clear edit comment field",
+  "statusTrace" : "self = <topics_test.TestTopics object at 0x7f6bff856360>\n\n    @allure.title(\"Edit text comment\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"add_text_comment\", \"delete_created_topic\")\n    def test_user_edit_text_comment(self):\n        self.topics_page.click_last_comment_edit_button()\n>       self.topics_page.clear_edit_comment_text_field()\n\ntests/topics_test.py:55: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f6bff8544d0>\n\n    @allure.step('Clear edit comment text field')\n    def clear_edit_comment_text_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit comment field\"\nE       AssertionError: There is a text after clear edit comment field\n\npages/topics_page.py:88: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1704912700218,
+      "stop" : 1704912701039,
+      "duration" : 821
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "create_topic_without_cover",
+    "time" : {
+      "start" : 1704912706493,
+      "stop" : 1704912707905,
+      "duration" : 1412
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click add topic button",
+      "time" : {
+        "start" : 1704912706493,
+        "stop" : 1704912706578,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter new topic name",
+      "time" : {
+        "start" : 1704912706578,
+        "stop" : 1704912706793,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "topic_name",
+        "value" : "'demo 1704912706.4930432'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click OK button on topic create window",
+      "time" : {
+        "start" : 1704912706793,
+        "stop" : 1704912706865,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the created topic appear at the list",
+      "time" : {
+        "start" : 1704912706865,
+        "stop" : 1704912707888,
+        "duration" : 1023
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the created topic is opened",
+      "time" : {
+        "start" : 1704912707888,
+        "stop" : 1704912707905,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "login_open_project_logout",
+    "time" : {
+      "start" : 1704912701039,
+      "stop" : 1704912706493,
+      "duration" : 5454
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login",
+      "time" : {
+        "start" : 1704912701039,
+        "stop" : 1704912704051,
+        "duration" : 3012
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open https://space.a-mates.com/login page",
+        "time" : {
+          "start" : 1704912701039,
+          "stop" : 1704912702703,
+          "duration" : 1664
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/login is opened",
+        "time" : {
+          "start" : 1704912702703,
+          "stop" : 1704912702706,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Enter login",
+        "time" : {
+          "start" : 1704912702706,
+          "stop" : 1704912702836,
+          "duration" : 130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "login",
+          "value" : "'test5brest+13@gmail.com'"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Enter password",
+        "time" : {
+          "start" : 1704912702836,
+          "stop" : 1704912702920,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'Orange609!'"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Click submit button",
+        "time" : {
+          "start" : 1704912702921,
+          "stop" : 1704912702979,
+          "duration" : 58
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/projects is opened",
+        "time" : {
+          "start" : 1704912702979,
+          "stop" : 1704912704051,
+          "duration" : 1072
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Open My project",
+      "time" : {
+        "start" : 1704912704051,
+        "stop" : 1704912706493,
+        "duration" : 2442
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on 'My projects' button in top menu",
+        "time" : {
+          "start" : 1704912704051,
+          "stop" : 1704912704103,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on 'NAME_OF_MY_PROJECT' button",
+        "time" : {
+          "start" : 1704912704103,
+          "stop" : 1704912704485,
+          "duration" : 382
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Page https://space.a-mates.com/topics is opened",
+        "time" : {
+          "start" : 1704912704485,
+          "stop" : 1704912706493,
+          "duration" : 2008
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Logout",
+      "time" : {
+        "start" : 1704912706493,
+        "stop" : 1704912706493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704912701039,
+      "stop" : 1704912701039,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "delete_created_topic",
+    "time" : {
+      "start" : 1704912709147,
+      "stop" : 1704912709147,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "add_text_comment",
+    "time" : {
+      "start" : 1704912707905,
+      "stop" : 1704912709147,
+      "duration" : 1242
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter text comment",
+      "time" : {
+        "start" : 1704912707905,
+        "stop" : 1704912708066,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_comment",
+        "value" : "'comment 1704912707.9054089'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click send comment button",
+      "time" : {
+        "start" : 1704912708066,
+        "stop" : 1704912708121,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if last comment has sended text",
+      "time" : {
+        "start" : 1704912708121,
+        "stop" : 1704912709146,
+        "duration" : 1025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: There is a text after clear edit comment field",
+    "statusTrace" : "self = <topics_test.TestTopics object at 0x7f6bff856360>\n\n    @allure.title(\"Edit text comment\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    @pytest.mark.usefixtures(\"login_open_project_logout\", \"create_topic_without_cover\", \"add_text_comment\", \"delete_created_topic\")\n    def test_user_edit_text_comment(self):\n        self.topics_page.click_last_comment_edit_button()\n>       self.topics_page.clear_edit_comment_text_field()\n\ntests/topics_test.py:55: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.topics_page.TopicsPage object at 0x7f6bff8544d0>\n\n    @allure.step('Clear edit comment text field')\n    def clear_edit_comment_text_field(self):\n        edit_field = self.wait.until(EC.element_to_be_clickable(TopicsLocators.EDIT_FIELD))\n        edit_field.send_keys(Keys.COMMAND + \"A\")\n        edit_field.send_keys(Keys.BACKSPACE)\n>       assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit comment field\"\nE       AssertionError: There is a text after clear edit comment field\n\npages/topics_page.py:88: AssertionError",
+    "steps" : [ {
+      "name" : "Click last comment edit button",
+      "time" : {
+        "start" : 1704912709147,
+        "stop" : 1704912709209,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Clear edit comment text field",
+      "time" : {
+        "start" : 1704912709209,
+        "stop" : 1704912709274,
+        "duration" : 65
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: There is a text after clear edit comment field\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/topics_page.py\", line 88, in clear_edit_comment_text_field\n    assert edit_field.get_attribute(\"value\") == \"\", \"There is a text after clear edit comment field\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1704912712740,
+      "stop" : 1704912712799,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "login_open_project_logout::finalizer",
+    "time" : {
+      "start" : 1704912711591,
+      "stop" : 1704912712738,
+      "duration" : 1147
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click e-mail button in Top menu",
+      "time" : {
+        "start" : 1704912711591,
+        "stop" : 1704912711641,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click logout button in Top menu",
+      "time" : {
+        "start" : 1704912711641,
+        "stop" : 1704912712703,
+        "duration" : 1062
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://space.a-mates.com/login is opened",
+      "time" : {
+        "start" : 1704912712703,
+        "stop" : 1704912712738,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "delete_created_topic::finalizer",
+    "time" : {
+      "start" : 1704912709282,
+      "stop" : 1704912711590,
+      "duration" : 2308
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click topic settings button",
+      "time" : {
+        "start" : 1704912709282,
+        "stop" : 1704912709425,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click topic delete button",
+      "time" : {
+        "start" : 1704912709425,
+        "stop" : 1704912709509,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click topic yes button in topic delete alert",
+      "time" : {
+        "start" : 1704912709509,
+        "stop" : 1704912710572,
+        "duration" : 1063
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if the deleted topic disappear from the topic list",
+      "time" : {
+        "start" : 1704912710572,
+        "stop" : 1704912711590,
+        "duration" : 1018
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Topics"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_open_project_logout', 'create_topic_without_cover', 'add_text_comment', 'delete_created_topic')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "topics_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTopics"
+  }, {
+    "name" : "host",
+    "value" : "9d65cbc9520a"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.topics_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "f1f1f6e70a96149e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704911736069,
+          "stop" : 1704911736069,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e0c8566e63cac1f9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: There is a text after clear edit comment field",
+        "time" : {
+          "start" : 1704911362892,
+          "stop" : 1704911363019,
+          "duration" : 127
+        }
+      }, {
+        "uid" : "400bd291b0d09dc9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: There is a text after clear edit comment field",
+        "time" : {
+          "start" : 1704910937288,
+          "stop" : 1704910937421,
+          "duration" : 133
+        }
+      }, {
+        "uid" : "d3d30e18530c2f63",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1704909855725,
+          "stop" : 1704909855725,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout', 'create_topic_without_cover', 'add_text_comment', 'delete_created_topic')", "smoke" ]
+  },
+  "source" : "28cd0783f6ef2306.json",
+  "parameterValues" : [ ]
+}

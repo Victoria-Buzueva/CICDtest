@@ -4,156 +4,156 @@
     "name" : "tests.topics_test",
     "children" : [ {
       "name" : "Create topic without cover",
-      "uid" : "e8a8a9a22cbc8dd4",
+      "uid" : "9f854dbc977e5ed9",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1704911690470,
-        "stop" : 1704911700836,
-        "duration" : 10366
+        "start" : 1704912667970,
+        "stop" : 1704912669360,
+        "duration" : 1390
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create topic with cover",
-      "uid" : "4531141adaafdae2",
+      "uid" : "2a62771ae0a3a2ec",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911717622,
-        "stop" : 1704911720249,
-        "duration" : 2627
+        "start" : 1704912678174,
+        "stop" : 1704912680604,
+        "duration" : 2430
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add text comment",
-      "uid" : "990c676cf8573eff",
-      "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704911732325,
-        "stop" : 1704911733541,
-        "duration" : 1216
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Edit text comment",
-      "uid" : "f1f1f6e70a96149e",
+      "uid" : "6b74d2a275b0bd92",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "broken",
       "time" : {
-        "start" : 1704911736069,
-        "stop" : 1704911736069,
+        "start" : 1704912683155,
+        "stop" : 1704912683155,
         "duration" : 0
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
+      "name" : "Edit text comment",
+      "uid" : "28cd0783f6ef2306",
+      "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
+      "status" : "failed",
+      "time" : {
+        "start" : 1704912709147,
+        "stop" : 1704912709274,
+        "duration" : 127
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
       "name" : "Delete single comment in the topic",
-      "uid" : "c4a6e9282780f8e5",
+      "uid" : "e45b39de9cd99b52",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911761637,
-        "stop" : 1704911763778,
-        "duration" : 2141
+        "start" : 1704912721656,
+        "stop" : 1704912722798,
+        "duration" : 1142
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit topic",
-      "uid" : "10655200c5a1ca9a",
+      "uid" : "a15aad2be495d1f3",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
-      "status" : "failed",
+      "status" : "broken",
       "time" : {
-        "start" : 1704911775220,
-        "stop" : 1704911775528,
-        "duration" : 308
+        "start" : 1704912724382,
+        "stop" : 1704912724382,
+        "duration" : 0
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete topic",
-      "uid" : "a7db1fcd6573f45f",
+      "uid" : "b87269c131cbc714",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911785321,
-        "stop" : 1704911786621,
-        "duration" : 1300
+        "start" : 1704912752686,
+        "stop" : 1704912754020,
+        "duration" : 1334
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Successful topic search",
-      "uid" : "70c3883027026a22",
+      "uid" : "b2b9e0d3b0466292",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911794086,
-        "stop" : 1704911795475,
-        "duration" : 1389
+        "start" : 1704912760573,
+        "stop" : 1704912761914,
+        "duration" : 1341
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Successful comment search",
-      "uid" : "8baa92fe1d82b409",
+      "uid" : "775bef41f925572c",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911801020,
-        "stop" : 1704911803459,
-        "duration" : 2439
+        "start" : 1704912768310,
+        "stop" : 1704912770752,
+        "duration" : 2442
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Search with empty results",
-      "uid" : "8cd8f65ddfd1f7a5",
+      "uid" : "e250272cc4909a3f",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911809983,
-        "stop" : 1704911812764,
-        "duration" : 2781
+        "start" : 1704912777222,
+        "stop" : 1704912779863,
+        "duration" : 2641
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open topic from search",
-      "uid" : "c4ff9c2a6bdc5870",
+      "uid" : "83854c814538f3ac",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911818213,
-        "stop" : 1704911821002,
-        "duration" : 2789
+        "start" : 1704912787405,
+        "stop" : 1704912790159,
+        "duration" : 2754
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open comment from search",
-      "uid" : "a3832c952e9b9ebe",
+      "uid" : "be3fd9b89712e897",
       "parentUid" : "ab01f0840a8e7e5565ca1c74ac45fe66",
       "status" : "passed",
       "time" : {
-        "start" : 1704911827570,
-        "stop" : 1704911831259,
-        "duration" : 3689
+        "start" : 1704912797733,
+        "stop" : 1704912800351,
+        "duration" : 2618
       },
       "flaky" : false,
       "newFailed" : false,

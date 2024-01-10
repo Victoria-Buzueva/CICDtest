@@ -1,68 +1,98 @@
 {
-  "uid" : "8baa92fe1d82b409",
-  "name" : "Successful comment search",
-  "fullName" : "tests.topics_test.TestTopics#test_user_success_comment_search",
-  "historyId" : "e952e3b759d73be29bcad3803ff7b294",
+  "uid" : "83854c814538f3ac",
+  "name" : "Open topic from search",
+  "fullName" : "tests.topics_test.TestTopics#test_user_open_topic_from_search",
+  "historyId" : "4fc52f09c552396efdcdd5d97511ea53",
   "time" : {
-    "start" : 1704911801020,
-    "stop" : 1704911803459,
-    "duration" : 2439
+    "start" : 1704912787405,
+    "stop" : 1704912790159,
+    "duration" : 2754
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1704912781070,
+      "stop" : 1704912781889,
+      "duration" : 819
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704912781890,
+      "stop" : 1704912781890,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
     "name" : "login_open_project_logout",
     "time" : {
-      "start" : 1704911796532,
-      "stop" : 1704911801020,
-      "duration" : 4488
+      "start" : 1704912781890,
+      "stop" : 1704912787405,
+      "duration" : 5515
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Login",
       "time" : {
-        "start" : 1704911796532,
-        "stop" : 1704911799528,
-        "duration" : 2996
+        "start" : 1704912781890,
+        "stop" : 1704912784878,
+        "duration" : 2988
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Open https://space.a-mates.com/login page",
         "time" : {
-          "start" : 1704911796532,
-          "stop" : 1704911798226,
-          "duration" : 1694
+          "start" : 1704912781890,
+          "stop" : 1704912783536,
+          "duration" : 1646
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/login is opened",
         "time" : {
-          "start" : 1704911798226,
-          "stop" : 1704911798229,
+          "start" : 1704912783536,
+          "stop" : 1704912783539,
           "duration" : 3
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Enter login",
         "time" : {
-          "start" : 1704911798229,
-          "stop" : 1704911798364,
-          "duration" : 135
+          "start" : 1704912783539,
+          "stop" : 1704912783672,
+          "duration" : 133
         },
         "status" : "passed",
         "steps" : [ ],
@@ -71,16 +101,16 @@
           "name" : "login",
           "value" : "'test5brest+13@gmail.com'"
         } ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : true
       }, {
         "name" : "Enter password",
         "time" : {
-          "start" : 1704911798364,
-          "stop" : 1704911798452,
-          "duration" : 88
+          "start" : 1704912783672,
+          "stop" : 1704912783758,
+          "duration" : 86
         },
         "status" : "passed",
         "steps" : [ ],
@@ -89,290 +119,275 @@
           "name" : "password",
           "value" : "'Orange609!'"
         } ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : true
       }, {
         "name" : "Click submit button",
         "time" : {
-          "start" : 1704911798452,
-          "stop" : 1704911798515,
-          "duration" : 63
+          "start" : 1704912783758,
+          "stop" : 1704912783819,
+          "duration" : 61
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/projects is opened",
         "time" : {
-          "start" : 1704911798516,
-          "stop" : 1704911799528,
-          "duration" : 1012
+          "start" : 1704912783819,
+          "stop" : 1704912784878,
+          "duration" : 1059
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 6,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 6,
       "hasContent" : true
     }, {
       "name" : "Open My project",
       "time" : {
-        "start" : 1704911799528,
-        "stop" : 1704911801020,
-        "duration" : 1492
+        "start" : 1704912784878,
+        "stop" : 1704912787405,
+        "duration" : 2527
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Click on 'My projects' button in top menu",
         "time" : {
-          "start" : 1704911799528,
-          "stop" : 1704911799583,
-          "duration" : 55
+          "start" : 1704912784878,
+          "stop" : 1704912785042,
+          "duration" : 164
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Click on 'NAME_OF_MY_PROJECT' button",
         "time" : {
-          "start" : 1704911799583,
-          "stop" : 1704911799983,
-          "duration" : 400
+          "start" : 1704912785042,
+          "stop" : 1704912785397,
+          "duration" : 355
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       }, {
         "name" : "Page https://space.a-mates.com/topics is opened",
         "time" : {
-          "start" : 1704911799983,
-          "stop" : 1704911801020,
-          "duration" : 1037
+          "start" : 1704912785397,
+          "stop" : 1704912787405,
+          "duration" : 2008
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "stepsCount" : 0,
         "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 3,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 3,
       "hasContent" : true
     }, {
       "name" : "Logout",
       "time" : {
-        "start" : 1704911801020,
-        "stop" : 1704911801020,
+        "start" : 1704912787405,
+        "stop" : 1704912787405,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 12,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : true
-  }, {
-    "name" : "setup",
-    "time" : {
-      "start" : 1704911796532,
-      "stop" : 1704911796532,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1704911795701,
-      "stop" : 1704911796532,
-      "duration" : 831
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Click search topic button",
       "time" : {
-        "start" : 1704911801021,
-        "stop" : 1704911801100,
-        "duration" : 79
+        "start" : 1704912787405,
+        "stop" : 1704912787501,
+        "duration" : 96
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Enter comment search",
+      "name" : "Enter topic search",
       "time" : {
-        "start" : 1704911801100,
-        "stop" : 1704911801224,
-        "duration" : 124
+        "start" : 1704912787501,
+        "stop" : 1704912787588,
+        "duration" : 87
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Check comment search result not null and contains a search string",
+      "name" : "Check topic search result not null and contains a search string",
       "time" : {
-        "start" : 1704911801224,
-        "stop" : 1704911803459,
-        "duration" : 2235
+        "start" : 1704912787588,
+        "stop" : 1704912788773,
+        "duration" : 1185
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open random topic from search",
+      "time" : {
+        "start" : 1704912788773,
+        "stop" : 1704912790159,
+        "duration" : 1386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
       "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
       "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 3,
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "login_open_project_logout::finalizer",
-    "time" : {
-      "start" : 1704911803460,
-      "stop" : 1704911803608,
-      "duration" : 148
-    },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "Click e-mail button in Top menu",
-      "time" : {
-        "start" : 1704911803460,
-        "stop" : 1704911803520,
-        "duration" : 60
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click logout button in Top menu",
-      "time" : {
-        "start" : 1704911803520,
-        "stop" : 1704911803601,
-        "duration" : 81
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Page https://space.a-mates.com/login is opened",
-      "time" : {
-        "start" : 1704911803601,
-        "stop" : 1704911803608,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 3,
-    "hasContent" : true
-  }, {
     "name" : "driver::0",
     "time" : {
-      "start" : 1704911803609,
-      "stop" : 1704911803669,
+      "start" : 1704912791353,
+      "stop" : 1704912791413,
       "duration" : 60
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
     "hasContent" : false
+  }, {
+    "name" : "login_open_project_logout::finalizer",
+    "time" : {
+      "start" : 1704912790159,
+      "stop" : 1704912791352,
+      "duration" : 1193
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click e-mail button in Top menu",
+      "time" : {
+        "start" : 1704912790159,
+        "stop" : 1704912790249,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click logout button in Top menu",
+      "time" : {
+        "start" : 1704912790249,
+        "stop" : 1704912791313,
+        "duration" : 1064
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://space.a-mates.com/login is opened",
+      "time" : {
+        "start" : 1704912791313,
+        "stop" : 1704912791352,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
   } ],
   "labels" : [ {
     "name" : "severity",
@@ -397,7 +412,7 @@
     "value" : "TestTopics"
   }, {
     "name" : "host",
-    "value" : "6395a219e75c"
+    "value" : "9d65cbc9520a"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -427,38 +442,46 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
-        "uid" : "986f962bb52f52d2",
+        "uid" : "c4ff9c2a6bdc5870",
         "status" : "passed",
         "time" : {
-          "start" : 1704911412899,
-          "stop" : 1704911414289,
-          "duration" : 1390
+          "start" : 1704911818213,
+          "stop" : 1704911821002,
+          "duration" : 2789
         }
       }, {
-        "uid" : "75dd881a01e7b2cf",
+        "uid" : "db287734ceadea76",
         "status" : "passed",
         "time" : {
-          "start" : 1704910999965,
-          "stop" : 1704911002443,
-          "duration" : 2478
+          "start" : 1704911427408,
+          "stop" : 1704911430128,
+          "duration" : 2720
         }
       }, {
-        "uid" : "8c3c3483a803221b",
+        "uid" : "59fadd6422f69808",
         "status" : "passed",
         "time" : {
-          "start" : 1704909924367,
-          "stop" : 1704909926759,
-          "duration" : 2392
+          "start" : 1704911021528,
+          "stop" : 1704911024505,
+          "duration" : 2977
+        }
+      }, {
+        "uid" : "bb706930a4d7f70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704909940661,
+          "stop" : 1704909943372,
+          "duration" : 2711
         }
       } ]
     },
     "tags" : [ "@pytest.mark.usefixtures('login_open_project_logout')", "smoke" ]
   },
-  "source" : "8baa92fe1d82b409.json",
+  "source" : "83854c814538f3ac.json",
   "parameterValues" : [ ]
 }

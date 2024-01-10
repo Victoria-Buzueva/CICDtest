@@ -5,26 +5,26 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Create topic without cover",
-        "uid" : "e8a8a9a22cbc8dd4",
+        "name" : "Add text comment",
+        "uid" : "6b74d2a275b0bd92",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704911690470,
-          "stop" : 1704911700836,
-          "duration" : 10366
+          "start" : 1704912683155,
+          "stop" : 1704912683155,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Edit text comment",
-        "uid" : "f1f1f6e70a96149e",
+        "name" : "Edit topic",
+        "uid" : "a15aad2be495d1f3",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704911736069,
-          "stop" : 1704911736069,
+          "start" : 1704912724382,
+          "stop" : 1704912724382,
           "duration" : 0
         },
         "flaky" : false,
@@ -37,22 +37,22 @@
   }, {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: There is a text after clear edit topic field",
+      "name" : "AssertionError: There is a text after clear edit comment field",
       "children" : [ {
-        "name" : "Edit topic",
-        "uid" : "10655200c5a1ca9a",
-        "parentUid" : "8a23fe46528bd9570423f683e1c45df3",
+        "name" : "Edit text comment",
+        "uid" : "28cd0783f6ef2306",
+        "parentUid" : "6e0c4212f633c64eaae9e7aa4070e9f3",
         "status" : "failed",
         "time" : {
-          "start" : 1704911775220,
-          "stop" : 1704911775528,
-          "duration" : 308
+          "start" : 1704912709147,
+          "stop" : 1704912709274,
+          "duration" : 127
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8a23fe46528bd9570423f683e1c45df3"
+      "uid" : "6e0c4212f633c64eaae9e7aa4070e9f3"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
