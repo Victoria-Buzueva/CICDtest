@@ -6,20 +6,20 @@ from base.base_test import BaseTest
 
 @allure.feature("Topics")
 class TestTopics(BaseTest):
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Create topic without cover")
     @allure.severity("Critical")
     @pytest.mark.smoke
     @pytest.mark.usefixtures("login_open_project_logout", "delete_created_topic")
     def test_user_create_topic_without_cover(self):
-        topic_name = "demo " + str(time.time())
+        self.topic_name = "demo " + str(time.time())
         self.topics_page.click_add_topic_button()
-        self.topics_page.enter_topic_name_in_create_topic_window(topic_name)
+        self.topics_page.enter_topic_name_in_create_topic_window(self.topic_name)
         self.topics_page.click_ok_button_in_create_topic_window()
         self.topics_page.topic_is_appeared_at_list()
         self.topics_page.topic_is_opened()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Create topic with cover")
     @allure.severity("Normal")
     @pytest.mark.smoke
@@ -34,7 +34,7 @@ class TestTopics(BaseTest):
         self.topics_page.topic_has_cover(self.topic_name)
         self.topics_page.topic_is_opened()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Add text comment")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -45,7 +45,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_send_comment_button()
         self.topics_page.last_comment_has_text()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Edit text comment")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -57,7 +57,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_edit_ok_button()
         self.topics_page.last_comment_has_text()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Delete single comment in the topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -67,7 +67,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_comment_delete_alert_yes_button()
         self.topics_page.check_topic_has_not_comments()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Edit topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -82,7 +82,7 @@ class TestTopics(BaseTest):
         self.topics_page.topic_is_appeared_at_list()
         self.topics_page.click_topic_proile_back_button()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Delete topic")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -93,7 +93,7 @@ class TestTopics(BaseTest):
         self.topics_page.click_topic_delete_alert_yes_button()
         self.topics_page.topic_is_disappear_from_topic_list()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Successful topic search")
     @allure.severity("Major")
     @pytest.mark.smoke
@@ -103,7 +103,7 @@ class TestTopics(BaseTest):
         self.topics_page.enter_topic_search()
         self.topics_page.check_topic_search_result()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Successful comment search")
     @allure.severity("Major")
     @pytest.mark.smoke
@@ -113,7 +113,7 @@ class TestTopics(BaseTest):
         self.topics_page.enter_comment_search()
         self.topics_page.check_comment_search_result()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Search with empty results")
     @allure.severity("Major")
     @pytest.mark.smoke
@@ -123,7 +123,7 @@ class TestTopics(BaseTest):
         self.topics_page.enter_empty_search()
         self.topics_page.check_empty_search_result()
 
-    @pytest.mark.skip
+    # @pytest.mark.skip
     @allure.title("Open topic from search")
     @allure.severity("Major")
     @pytest.mark.smoke
