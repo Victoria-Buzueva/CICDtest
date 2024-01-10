@@ -1,18 +1,39 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "children" : [ {
+        "name" : "Create topic without cover",
+        "uid" : "90744399903abda7",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704911309151,
+          "stop" : 1704911319514,
+          "duration" : 10363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError: There is a text after clear edit comment field",
       "children" : [ {
         "name" : "Edit text comment",
-        "uid" : "400bd291b0d09dc9",
+        "uid" : "e0c8566e63cac1f9",
         "parentUid" : "6e0c4212f633c64eaae9e7aa4070e9f3",
         "status" : "failed",
         "time" : {
-          "start" : 1704910937288,
-          "stop" : 1704910937421,
-          "duration" : 133
+          "start" : 1704911362892,
+          "stop" : 1704911363019,
+          "duration" : 127
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +44,13 @@
       "name" : "AssertionError: There is a text after clear edit topic field",
       "children" : [ {
         "name" : "Edit topic",
-        "uid" : "7bd64bd8378830e7",
+        "uid" : "cf4d42e6d3762c1f",
         "parentUid" : "8a23fe46528bd9570423f683e1c45df3",
         "status" : "failed",
         "time" : {
-          "start" : 1704910964760,
-          "stop" : 1704910966104,
-          "duration" : 1344
+          "start" : 1704911386155,
+          "stop" : 1704911386514,
+          "duration" : 359
         },
         "flaky" : false,
         "newFailed" : false,
