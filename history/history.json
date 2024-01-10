@@ -1,133 +1,177 @@
 {
-  "6aa7b2dcc614092fb838c8626a31c199" : {
+  "4fc52f09c552396efdcdd5d97511ea53" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 13
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "4f9349ea8d0b57a2",
+      "uid" : "bb706930a4d7f70",
       "status" : "passed",
       "time" : {
-        "start" : 1704723426829,
-        "stop" : 1704723429707,
-        "duration" : 2878
+        "start" : 1704909940661,
+        "stop" : 1704909943372,
+        "duration" : 2711
       }
-    }, {
-      "uid" : "52b28cbb67c7a461",
+    } ]
+  },
+  "4df83589fea6d2564669dc3873c94451" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "985d979eeee1ac3",
       "status" : "passed",
       "time" : {
-        "start" : 1704722994412,
-        "stop" : 1704722997262,
-        "duration" : 2850
+        "start" : 1704909882004,
+        "stop" : 1704909883146,
+        "duration" : 1142
       }
-    }, {
-      "uid" : "77cc1c7aaf832939",
+    } ]
+  },
+  "836b1d307fbab16c697df8559fcef79a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5517ea763c3ebbb6",
       "status" : "passed",
       "time" : {
-        "start" : 1704722430157,
-        "stop" : 1704722433188,
-        "duration" : 3031
+        "start" : 1704909950370,
+        "stop" : 1704909953970,
+        "duration" : 3600
       }
-    }, {
-      "uid" : "c62c3d92a5f2e164",
+    } ]
+  },
+  "dee8eb954ab0195b87a0fec1896aa50d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dafd722678e995f4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: There is a text after clear edit topic field",
+      "time" : {
+        "start" : 1704909893291,
+        "stop" : 1704909893641,
+        "duration" : 350
+      }
+    } ]
+  },
+  "ffa06ddd1fb050797ff5082119fc13e7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba167710150382ac",
       "status" : "passed",
       "time" : {
-        "start" : 1704720999696,
-        "stop" : 1704721002587,
-        "duration" : 2891
+        "start" : 1704909931913,
+        "stop" : 1704909934487,
+        "duration" : 2574
       }
-    }, {
-      "uid" : "df862b67f2d9b27a",
+    } ]
+  },
+  "6e6d5c59e40c813df53739e9055fafaf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da673c97b7bf8efc",
       "status" : "passed",
       "time" : {
-        "start" : 1704720405818,
-        "stop" : 1704720408718,
-        "duration" : 2900
+        "start" : 1704909917546,
+        "stop" : 1704909918878,
+        "duration" : 1332
       }
-    }, {
-      "uid" : "f2ca692c0b0e1320",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704709964640,
-        "stop" : 1704709967964,
-        "duration" : 3324
-      }
-    }, {
-      "uid" : "b6acc05c782d5c77",
-      "status" : "broken",
-      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
-      "time" : {
-        "start" : 1704709272609,
-        "stop" : 1704709272929,
-        "duration" : 320
-      }
-    }, {
-      "uid" : "7283236e31bc408e",
+    } ]
+  },
+  "e7a0b83632f2d094241f2ac4c4143b20" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3d30e18530c2f63",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1704708813069,
-        "stop" : 1704708823455,
-        "duration" : 10386
-      }
-    }, {
-      "uid" : "619ffa8ba1eae0b7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704500101259,
-        "stop" : 1704500105105,
-        "duration" : 3846
-      }
-    }, {
-      "uid" : "6a41c9b3b0915ed9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704499683953,
-        "stop" : 1704499687808,
-        "duration" : 3855
-      }
-    }, {
-      "uid" : "21174452c8703fc0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704499393808,
-        "stop" : 1704499398598,
-        "duration" : 4790
-      }
-    }, {
-      "uid" : "d0bbb017a0344756",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
-      "time" : {
-        "start" : 1704499051463,
-        "stop" : 1704499061810,
-        "duration" : 10347
-      }
-    }, {
-      "uid" : "1cbf173b88109da4",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
-      "time" : {
-        "start" : 1704498549728,
-        "stop" : 1704498549728,
+        "start" : 1704909855725,
+        "stop" : 1704909855725,
         "duration" : 0
+      }
+    } ]
+  },
+  "e952e3b759d73be29bcad3803ff7b294" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c3c3483a803221b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704909924367,
+        "stop" : 1704909926759,
+        "duration" : 2392
       }
     } ]
   },
   "a746b61eea2e5348e6ce25d4e0b6144b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "88a9e6d0790eaa27",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704909839187,
+        "stop" : 1704909839187,
+        "duration" : 0
+      }
+    }, {
       "uid" : "7d9ac37922b16aa9",
       "status" : "passed",
       "time" : {
@@ -238,16 +282,152 @@
       }
     } ]
   },
+  "6aa7b2dcc614092fb838c8626a31c199" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 5,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 14
+    },
+    "items" : [ {
+      "uid" : "a466ccf3111cfb3a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704909815625,
+        "stop" : 1704909826003,
+        "duration" : 10378
+      }
+    }, {
+      "uid" : "4f9349ea8d0b57a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704723426829,
+        "stop" : 1704723429707,
+        "duration" : 2878
+      }
+    }, {
+      "uid" : "52b28cbb67c7a461",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704722994412,
+        "stop" : 1704722997262,
+        "duration" : 2850
+      }
+    }, {
+      "uid" : "77cc1c7aaf832939",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704722430157,
+        "stop" : 1704722433188,
+        "duration" : 3031
+      }
+    }, {
+      "uid" : "c62c3d92a5f2e164",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704720999696,
+        "stop" : 1704721002587,
+        "duration" : 2891
+      }
+    }, {
+      "uid" : "df862b67f2d9b27a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704720405818,
+        "stop" : 1704720408718,
+        "duration" : 2900
+      }
+    }, {
+      "uid" : "f2ca692c0b0e1320",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704709964640,
+        "stop" : 1704709967964,
+        "duration" : 3324
+      }
+    }, {
+      "uid" : "b6acc05c782d5c77",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TopicsPage' object has no attribute 'topics_page'. Did you mean: 'topic_name'?",
+      "time" : {
+        "start" : 1704709272609,
+        "stop" : 1704709272929,
+        "duration" : 320
+      }
+    }, {
+      "uid" : "7283236e31bc408e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704708813069,
+        "stop" : 1704708823455,
+        "duration" : 10386
+      }
+    }, {
+      "uid" : "619ffa8ba1eae0b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704500101259,
+        "stop" : 1704500105105,
+        "duration" : 3846
+      }
+    }, {
+      "uid" : "6a41c9b3b0915ed9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704499683953,
+        "stop" : 1704499687808,
+        "duration" : 3855
+      }
+    }, {
+      "uid" : "21174452c8703fc0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704499393808,
+        "stop" : 1704499398598,
+        "duration" : 4790
+      }
+    }, {
+      "uid" : "d0bbb017a0344756",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704499051463,
+        "stop" : 1704499061810,
+        "duration" : 10347
+      }
+    }, {
+      "uid" : "1cbf173b88109da4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1704498549728,
+        "stop" : 1704498549728,
+        "duration" : 0
+      }
+    } ]
+  },
   "6dec78be3e8364aed50d4c9c053686d1" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "5207629d3e04a494",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704909833227,
+        "stop" : 1704909836646,
+        "duration" : 3419
+      }
+    }, {
       "uid" : "dc4df0efb90fd243",
       "status" : "passed",
       "time" : {
@@ -362,13 +542,22 @@
   "f53cd339440fb7bd7b0626d994088edc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "dc8a38e7d2886e76",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704909895882,
+        "stop" : 1704909895882,
+        "duration" : 0
+      }
+    }, {
       "uid" : "5a5282e05cbd3b1f",
       "status" : "passed",
       "time" : {
